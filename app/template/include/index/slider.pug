@@ -1,0 +1,32 @@
+//SLIDER BLOCK
+.container-fluid.slider(style='position: relative;')
+	.carousel.slide.carousel-fade.slider_block(id='carousel-example-generic', data-ride='carousel')
+		.carousel-inner
+			.item.active
+				img(src='../public/images/slider/1.jpg', alt='')
+				.container
+					.carousel-caption
+						h3.wow.fadeIn(data-wow-offset='200', data-wow-delay='0.2s') Уникальное торговое<br>предложение
+						a.btn.btn-default.wow.fadeIn(data-wow-delay='0.8s', href='#') ПОСМОТРЕТЬ ПРОДУКЦИЮ
+			.item
+				img(src='../public/images/slider/1.jpg', alt='')
+				.container
+					.carousel-caption
+						h3.wow.fadeIn(data-wow-offset='200', data-wow-delay='0.2s') Уникальное торговое<br>предложение
+						a.btn.btn-default.wow.fadeIn(data-wow-offset='100', data-wow-delay='0.8s', href='#') ПОСМОТРЕТЬ ПРОДУКЦИЮ
+			.item
+				img(src='../public/images/slider/1.jpg', alt='')
+				.container
+					.carousel-caption
+						h3.wow.fadeIn(data-wow-offset='200', data-wow-delay='0.2s') Уникальное торговое<br>предложение
+						a.btn.btn-default.wow.fadeIn(data-wow-offset='100', data-wow-delay='0.8s', href='#') ПОСМОТРЕТЬ ПРОДУКЦИЮ
+		div.wrapper-bottom-line
+			ol.carousel-indicators
+				li.active(data-target='#carousel-example-generic', data-slide-to='0')
+				li(data-target='#carousel-example-generic', data-slide-to='1')
+				li(data-target='#carousel-example-generic', data-slide-to='2')
+						
+			include ../_langToggle
+			include _scroll
+			
+// *SLEDER BLOCK END*

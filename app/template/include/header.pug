@@ -1,0 +1,33 @@
+// HEDAER
+nav.navbar.navbar-default(role='navigation')
+	.container
+		.navbar-header
+			button.navbar-toggle(type='button', data-toggle='collapse', data-target='#menu-collapse')
+				span.sr-only Toggle navigation
+				span.icon-bar
+			a.navbar-brand(href='/') 
+				img(src='../public/images/logo/logo.png', alt='Viston')
+
+		.collapse.navbar-collapse#menu-collapse
+			ul.nav.navbar-nav
+				li.active
+					a(href='index.html') Главная
+				li
+					a(href='products.html') Продукция
+				li
+					a(href='services.html') Услуги
+				li
+					a(href='about.html') О нас
+				li
+					a(href='career.html') Карьера
+				li
+					a(href='contacts.html') Контакты
+			.navbar-right
+				a.clear(data-toggle='modal', data-target='#search-modal')
+					i.search
+					|Поиск
+				hr
+				.input-group 
+					input(type='text', placeholder='Поиск...')
+					
+// * HEADER END *

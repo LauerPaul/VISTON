@@ -1,0 +1,261 @@
+
+<html lang="ru">
+  <head>
+    <!-- /+++++++++++++++++++++ META +++++++++++++++++++++/-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="language" content="RU"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="«copyright»" content="Developer©PavelLauer pu@lauer.com.ua"/>
+    <title>Viston</title>
+    <!-- /+++++++++++++++++++++ STYLES +++++++++++++++++++++/-->
+    <!--animate css-->
+    <link rel="stylesheet" href="../public/css/_lib/animate.min.css"/>
+    <!--FONT AWESOME css-->
+    <link rel="stylesheet" href="../public/css/_lib/font-awesome.min.css"/>
+    <!--default styles-->
+    <link rel="stylesheet" href="../public/css/main.css"/>
+    <!-- /++++++++++++++++++* STYLES END *++++++++++++++++++/-->
+    <!-- /+++++++++++++++++++++ SCRIPT Jquery +++++++++++++++++++++/-->
+    <script src="../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js"></script>
+    <!-- /++++++++++++++++++* SCRIPT Jquery END *++++++++++++++++++/-->
+  </head>
+</html>
+<body>
+  <!-- HEDAER-->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"> <img src="../public/images/logo/logo.png" alt="Viston"/></a>
+      </div>
+      <div class="collapse navbar-collapse" id="menu-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Главная</a></li>
+          <li><a href="products.html">Продукция</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="career.html">Карьера</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="navbar-right"><a class="clear" data-toggle="modal" data-target="#search-modal"><i class="search"></i>Поиск</a>
+          <hr/>
+          <div class="input-group"> 
+            <input type="text" placeholder="Поиск..."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- * HEADER END *-->
+  <!--SLIDER BLOCK-->
+  <div class="container-fluid slider" style="position: relative;">
+    <div class="carousel slide carousel-fade slider_block" id="carousel-example-generic" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active"><img src="../public/images/slider/1.jpg" alt=""/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h3 class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.2s">Уникальное торговое<br>предложение</h3><a class="btn btn-default wow fadeIn" data-wow-delay="0.8s" href="#">ПОСМОТРЕТЬ ПРОДУКЦИЮ</a>
+            </div>
+          </div>
+        </div>
+        <div class="item"><img src="../public/images/slider/1.jpg" alt=""/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h3 class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.2s">Уникальное торговое<br>предложение</h3><a class="btn btn-default wow fadeIn" data-wow-offset="100" data-wow-delay="0.8s" href="#">ПОСМОТРЕТЬ ПРОДУКЦИЮ</a>
+            </div>
+          </div>
+        </div>
+        <div class="item"><img src="../public/images/slider/1.jpg" alt=""/>
+          <div class="container">
+            <div class="carousel-caption">
+              <h3 class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.2s">Уникальное торговое<br>предложение</h3><a class="btn btn-default wow fadeIn" data-wow-offset="100" data-wow-delay="0.8s" href="#">ПОСМОТРЕТЬ ПРОДУКЦИЮ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-bottom-line">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- LANG button-->
+        <div class="btn-group lang-toggle dropup"><a class="dropdown-toggle" data-toggle="dropdown">RU <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu list-inline" role="menu">
+            <li><a>EN</a></li>
+            <li><a>DE</a></li>
+          </ul>
+        </div>
+        <!-- *LANG button END*-->
+        <!-- Mouse-scroll--><a class="mouse-scroll" onclick="scroll_down()"><span>Прокрутите вниз</span><br/><span class="mouse"></span>
+          <div class="down-mouse"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-down" aria-hidden="true"></i></div></a>
+        <!-- *Mouse-scroll END*-->
+      </div>
+    </div>
+  </div>
+  <!-- *SLEDER BLOCK END*-->
+  <!-- PRODUCTION BLOCK-->
+  <div class="container" id="second-section">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title wow fadeIn" data-wow-offset="150" data-wow-delay="0.1s"><span>Продукция</span></h2>
+      </div>
+    </div>
+    <div class="row products">
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/crane.jpg"/></span></div>
+          <p class="text-center pull-center">Краны мостовые</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/hoists.jpg"/></span></div>
+          <p class="text-center pull-center">Подъемные механизмы</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/screens.jpg"/></span></div>
+          <p class="text-center pull-center">Грохота</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/mk.jpg"/></span></div>
+          <p class="text-center pull-center">металлоконструкции</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/po.jpg"/></span></div>
+          <p class="text-center pull-center">погрузочное оборудование</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/kzk.jpg"/></span></div>
+          <p class="text-center pull-center">козловые краны</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/dv_k.jpg"/></span></div>
+          <p class="text-center pull-center">двигатели и<br/>крановые компоненты</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/kkk.jpg"/></span></div>
+          <p class="text-center pull-center">консольные<br/>и консольноповоротные краны</p></a></div>
+      <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="hvr clear" href="#">
+          <div class="img-circle-wrap pull-center"><span><img src="../public/images/productions/podo.jpg"/></span></div>
+          <p class="text-center pull-center">подъемное<br/>оборудование</p></a></div>
+    </div>
+    <div class="row padding-bottom text-center"><a class="btn btn-default grey wow bounceIn" data-wow-offset="120" data-wow-delay="0.1s" href="#form-link">СВЯЗАТЬСЯ С НАМИ</a></div>
+  </div>
+  <!-- PRODUCTION BLOCK END-->
+  <!-- SERVICE SECTION-->
+  <div class="container-fluid service">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title white wow fadeIn" data-wow-offset="100" data-wow-delay="0.1s"><span>Услуги</span></h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/1.png" alt=""/><img class="hvr" src="../public/images/services/1_h.png" alt=""/><span>Осмотр и техническое<br/>обслуживание</span></a></div>
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/2.png" alt=""/><img class="hvr" src="../public/images/services/2_h.png" alt=""/><span>Модернизация<br/>и переоснощение</span></a></div>
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/3.png" alt=""/><img class="hvr" src="../public/images/services/3_h.png" alt=""/><span>Запасные<br/>части</span></a></div>
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/4.png" alt=""/><img class="hvr" src="../public/images/services/4_h.png" alt=""/><span>Ремонт и сервисное<br/>обслуживание</span></a></div>
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/5.png" alt=""/><img class="hvr" src="../public/images/services/5_h.png" alt=""/><span>Проектирование<br/>оборудования</span></a></div>
+            <!-- Item-->
+            <div class="col-md-4 col-sm-4 col-xs-6 col-xs-6 col-xxs-12 wow zoomIn" data-wow-offset="100" data-wow-delay="0.1s"><a class="clear wrap-service-tab pull-center text-center"><img src="../public/images/services/6.png" alt=""/><img class="hvr" src="../public/images/services/6_h.png" alt=""/><span>Управление<br/>проектами</span></a></div>
+          </div>
+          <div class="row padding-bottom text-center"><a class="btn btn-default wow bounceIn" data-wow-offset="100" data-wow-delay="0.3s" href="#form-link">СВЯЗАТЬСЯ С НАМИ</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- *SERVICE SECTION END*-->
+  <!-- FORM-->
+  <div class="container" id="form-link">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>Свяжитесь с нами</span></h2>
+      </div>
+    </div>
+    <form class="row wow fadeIn" id="form-send" action="" method="post" data-wow-offset="100" data-wow-delay="0.2s">
+      <!--name-->
+      <div class="col-md-12 text-center">
+        <label for="name">Имя</label>
+        <div class="input-group">
+          <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name"/>
+        </div>
+      </div>
+      <!-- e-mail-->
+      <div class="col-md-12 text-center">
+        <label for="email">ЭЛ. Почта</label>
+        <div class="input-group">
+          <input class="form-control" id="email" type="email" placeholder="Введите Вашу электронную почту" name="email"/>
+        </div>
+      </div>
+      <!--tel-->
+      <div class="col-md-12 text-center">
+        <label for="tel">Телефон</label>
+        <div class="input-group">
+          <input class="form-control" id="tel" type="tel" placeholder="Введите Ваш мобильный телефон" name="tel"/>
+        </div>
+      </div>
+      <!-- comment-->
+      <div class="col-md-12 text-center">
+        <label for="comment">комментарий</label>
+        <div class="input-group">
+          <input class="form-control" id="comment" type="text" placeholder="Введите Ваш комментарий" name="comment"/>
+        </div>
+      </div>
+      <!--send button-->
+      <div class="col-md-12 text-center">
+        <div class="input-group last">
+          <input class="btn btn-default grey" type="submit" value="ОТПРАВИТЬ"/>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- *FORM END*-->
+  <!-- FOOTER SECTION-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4"><a class="logo" href="/"> <img src="../public/images/logo/logo.png" alt="Viston"/></a></div>
+              <div class="col-md-4 col-sm-4">
+                <p class="copyright text-center">All right reserved © Viston 2017</p>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <ul class="list-inline social">
+                  <li><a><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- *FOOTER SECTION END*-->
+  <!-- SEARCH MODAL-->
+  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" type="button" data-dismiss="modal">x</button>
+        </div>
+        <div class="modal-body text-center">
+          <label for="search">Поиск</label>
+          <div class="input-group">
+            <input class="form-control" id="search" type="text" placeholder="Введите, продукцию, которую желаете найти" name="search"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- *SEARCH MODAL END*-->
+  <!-- /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/-->
+  <!--Bootstrap js include-->
+  <script src="../public/(JS)EcmaScript/_lib/bootstrap.min.js"></script>
+  <!-- WOW JS include-->
+  <script src="../public/(JS)EcmaScript/_lib/wow.js"></script>
+  <!-- Main JS include-->
+  <script src="../public/(JS)EcmaScript/indexPage.main.js"></script>
+  <!-- /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/-->
+</body>

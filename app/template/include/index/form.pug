@@ -1,0 +1,32 @@
+﻿// FORM
+.container#form-link
+	.row
+		.col-md-12
+			h2.title.wow.fadeIn(data-wow-offset='120', data-wow-delay='0.2s')
+				span Свяжитесь с нами
+	form#form-send.row.wow.fadeIn(action='', method='post', data-wow-offset='100', data-wow-delay='0.2s')
+		//name
+		.col-md-12.text-center
+			label(for='name') Имя
+			.input-group
+				input.form-control#name(type='text', placeholder='Введите Ваше полное имя', name='name')
+		// e-mail
+		.col-md-12.text-center
+			label(for='email') ЭЛ. Почта
+			.input-group
+				input.form-control#email(type='email', placeholder='Введите Вашу электронную почту', name='email')
+		//tel
+		.col-md-12.text-center
+			label(for='tel') Телефон
+			.input-group
+				input.form-control#tel(type='tel', placeholder='Введите Ваш мобильный телефон', name='tel')
+		// comment
+		.col-md-12.text-center
+			label(for='comment') комментарий
+			.input-group
+				input.form-control#comment(type='text', placeholder='Введите Ваш комментарий', name='comment')
+		//send button
+		.col-md-12.text-center
+			.input-group.last
+				input.btn.btn-default.grey(type="submit", value='ОТПРАВИТЬ')
+// *FORM END*
