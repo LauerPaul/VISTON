@@ -1,0 +1,156 @@
+/* --------------FOOTER---------------- */
+footer{
+	.container-fluid{
+		background: #212121;
+	    padding: 30px 10px;
+
+		p.copyright{
+			color: $white;
+		    margin: 10px 0px 0px;
+			font-size: 18px;
+			
+			@media (max-width: 991px){
+				font-size: 15px;
+			}
+			
+			@media (max-width: 320px){
+				font-size: 13px;
+			}
+		}
+		
+		.col-md-4{
+			> a.logo{
+				display: block;
+				margin-top: 10px;
+				text-align: center;
+				
+				@media (max-width: 991px){
+					img{
+						width: 120px;
+					}
+				}
+				@media (max-width: 767px){
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		ul.list-inline.social{
+			margin: 10px 0px;
+		    float: right;
+			
+			@media (max-width: 767px){
+				float: none;
+				text-align: center;
+				margin-top: 20px;
+				margin-bottom: 0px;
+			}
+			
+			li{
+				padding-left: 12px;
+				padding-right: 12px;
+
+				a{
+					color: $white;
+				    font-size: 24px;
+		
+					&:hover{
+						color: $default-color;
+						position: relative;
+						top: -2px;
+						left: -1px;
+						right: -1px;
+					}
+					
+					@media (max-width: 991px){
+						font-size: 21px;
+					}
+				}
+			}
+		}
+	}
+}
+footer.white{
+	.container-fluid{
+		background: $white;
+		
+		p.copyright.text-center{
+			color: #212121;	
+		}
+
+		ul.social > li > a {
+			color: #212121;
+		}
+	}
+	.container-fluid.contacts{
+		background-color: #212121;
+		padding: 80px 0;
+		position: relative;
+		overflow: hidden;
+		margin-top: 75px;
+
+		&::before{
+			left: 0px;
+			top: 0px;
+			bottom: 0px;
+			right: 0px;
+			background: rgba(0,0,0,0.5);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+		h4{
+			text-transform: uppercase;
+			margin-top: 0px;
+			margin-bottom: 30px;
+		}
+		p, a{
+			font-size: 18px;
+			@media (max-width: 767px){
+				font-size: 16px;
+			}
+		}
+		a{
+			font-family: 'Ubuntu-Bold';
+			font-weight: normal;
+			letter-spacing: 1px;
+			margin-top: 30px;
+			display: inline-block;
+			
+			span.glyphicon.glyphicon-earphone {
+				margin-right: 15px;
+				position: relative;
+				top: 5px;
+				font-size: 22px;
+				line-height: 0px;
+				@media (max-width: 767px){
+					top: 8px;
+				}
+			}
+
+			span.glyphicon.glyphicon-envelope{
+				margin-right: 25px;
+				font-size: 22px;
+				line-height: 0px;
+				position: relative;
+				top: 2px;
+				@media (max-width: 767px){
+					top: 4px;
+				}
+			}
+
+			@media (max-width: 767px){
+				span{
+					font-size: 19px;
+				}
+			}
+			
+			&:hover{
+				color: white;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/* ------------FOOTER END-------------- */

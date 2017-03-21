@@ -1,0 +1,252 @@
+/* --------------SLIDER---------------- */
+.container-fluid.slider{
+	padding: 0px;
+	position: relative;
+	top: -105px;
+	z-index: 0;
+	margin-bottom: -105px;
+	
+	@media (max-width: 1224px){
+		min-height: 90px;
+		@media (min-width: 993px){
+			top: -85px;
+			margin-bottom: -85px;
+		}
+	}
+	@media (max-width: 992px){
+		@media (min-width: 768px){
+			margin-bottom: -71px;
+			top: -71px;
+		}
+	}
+	@media (max-width: 767px){
+		top: -75px;
+		margin-bottom: -75px;
+	}
+	
+	.slider_block{
+		.carousel-inner{
+			.item{
+				max-height: 900px;
+				
+				@media (max-width: 1466px){
+					img{
+						min-height: 100%;
+						min-width: 100%;
+						width: 100%;
+					}
+				}
+				@media (max-width: 767px){
+					height: 340px;
+				}
+				@media (min-width: 768px) and (max-width: 1199px){
+					height: 540px;
+				}
+				@media (max-width: 1366px) and (min-width: 1200px){
+					height: 660px;
+				}
+			}
+		}
+	}
+
+	.carousel-caption{
+		letter-spacing: 2.5px;
+		word-spacing: 7px;
+		bottom: 170px;
+		margin: auto;
+		right: -50%;
+		left: -50%;
+
+		@media (min-width: 768px){
+			width: 740px;
+		}
+		@media (min-width: 992px){
+			width: 960px;
+		}
+		@media (min-width: 1225px){
+			width: 1200px;
+		}
+		@media (max-width: 767px){
+			bottom: 90px;
+		}
+		@media (min-width: 1450px){
+			bottom: 260px;
+		}
+
+		h3 {
+			font-size: 60px;
+			font-family: 'Ubuntu-Bold';
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			
+			@media (min-width: 768px){
+				font-size: 2.5em;
+			}			
+			@media (min-width: 992px){
+				font-size: 3em;
+			}
+			@media (max-width: 1366px) and (min-width: 1200px){
+				font-size: 4em;
+			}
+			@media (max-width: 767px){
+				font-size: 1.5em;
+			}
+			@media (max-width: 471px){
+				font-size: 1.15em;
+			}
+			@media (max-width: 320px){
+				font-size: 0.9em;
+			}
+		}
+	}
+	.wrapper-bottom-line{
+		position: absolute;
+		width: 100%;
+		max-width: 1200px;
+		padding: 0 10px;
+		margin: auto;
+		height: 40px;
+		bottom: 40px;
+		left: -50%;
+		right: -50%;
+		
+		@media (max-width: 767px){
+			bottom: 20px;
+		}
+		@media (min-width: 768px) and (max-width: 991px){
+			width: 740px;
+		}
+		@media (min-width: 992px) and (max-width: 1199px) {
+			width: 960px;
+		}
+		
+		.lang-toggle{
+			position: absolute;
+			bottom: 0;
+			
+			.fa-caret-up{
+				display: none;
+			}
+			
+			a.dropdown-toggle{
+				color: white;
+				text-decoration: none;
+				
+				&:hover{
+					color: $default-color;
+				}
+			}
+		}
+
+		.lang-toggle.open{
+			a.dropdown-toggle{
+				color: $default-color;
+			}
+			
+			.fa-caret-up{
+				display: inline;
+			}
+			.fa-caret-down{
+				display: none;
+			}
+			ul.dropdown-menu.list-inline{
+				background: transparent;
+				box-shadow: none;
+				border: 0;
+				
+				li{
+					a{
+						color: $white;
+						padding: 0px;
+					}
+				
+					&:hover{
+						a{
+							background: transparent;
+							color: $default-color;
+						}
+					}
+				}
+			}
+		}
+		
+		.mouse-scroll{
+			width: 200px;
+			position: absolute;
+			left: -50%;
+			right: -50%;
+			bottom: 0;
+			margin: auto;
+			text-align: center;
+			color: white;
+			font-family: 'Ubuntu-Light';
+			
+			&:hover{
+				text-decoration: none;
+				color: $default-color;
+				
+				.mouse{
+					background-position: center bottom;
+				}
+			}
+			
+			@media (max-width: 767px){
+				font-size: 11px;
+				bottom: -5px;
+			}
+			
+			.mouse{
+				width: 20px;
+				height: 30px;
+				background: url(../images/icons/mouse.png) no-repeat center top;
+				display: inline-block;
+				clear: both;
+				margin-top: 5px;
+				
+				@media (max-width: 767px){
+					height: 18px;
+					background-size: cover;
+					width: 12px;
+				}
+			}
+			
+			.down-mouse{
+				height: 22px;
+				display: block;
+				
+				i.fa{
+					margin-right: -2px;
+					display: block;
+					position: relative;
+					bottom: 0;
+					animation: mouse 1s forwards 2s infinite;
+					
+					&:first-child{
+						margin-bottom: -6px;
+					}
+					
+				}
+			}
+			
+			@media (max-width: 320px){
+				display: none;
+			}
+		}
+		
+		.carousel-indicators{
+			bottom: 0;
+			right: 10px;
+			left: auto;
+			text-align: right;
+			margin-bottom: 0px;
+			
+			@media (max-width: 767px){
+				li, li.active{
+					width: 14px;
+				}
+			}
+		}
+	}
+}
+	
+/* -------------*SLIDER*--------------- */

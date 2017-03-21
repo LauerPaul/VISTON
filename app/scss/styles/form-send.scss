@@ -1,0 +1,44 @@
+/* -------------FORM SEND-------------- */
+#form-send.row{
+	margin-bottom: 0px;
+
+	.input-group{
+		max-width: 370px;
+		margin: auto;
+		width: 100%;
+		margin-bottom: 40px;
+		
+		input{
+			width: 100%;
+			text-align: center;
+		}
+		
+		@media (max-width: 767px){
+			margin-bottom: 20px;
+		}
+		
+		@media (max-width: 320px){
+			margin-bottom: 10px;
+		}
+	}
+	.last{
+		margin-bottom: 80px;
+		
+		@media( max-width: 767px){
+			margin-bottom: 40px;
+		}
+		
+		@media (max-width: 320px){
+			margin-bottom: 30px;
+		}
+	}
+}
+h2{
+	@media (max-width: 471px){
+		font-size: 26px;
+	}
+	@media (max-width: 320px){
+		font-size: 18px;
+	}
+}
+/* ----------*FORM SEND END*----------- */

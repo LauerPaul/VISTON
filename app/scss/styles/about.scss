@@ -1,0 +1,48 @@
+/* ------------ABOUT PAGE ------------- */
+.container-fluid.about{
+	border-bottom: 1px solid #c7c7c7;
+	
+	.menu.about{
+		margin-bottom: 0px;
+		
+		li{
+			text-transform: uppercase;
+			padding: 40px 30px;
+			text-align: center;
+			border-right: 1px solid #c7c7c7;
+			
+			&:last-child{
+				border-right: 0px;
+				text-align: right;
+			}
+			
+			a{
+				font-family: 'Ubuntu-Bold';
+				letter-spacing: 2px;
+			}
+
+			@media (max-width: 1350px){
+				font-size: 14px;
+				padding: 30px 20px;
+			}
+			@media (max-width: 991px){
+				font-size: 12px;
+			}
+
+		}
+
+		li.active{
+			a{
+				border-bottom: 3px solid $default-color;
+				margin-bottom: -40px;
+				padding-bottom: 41px;
+				
+				@media (max-width: 1350px){
+					margin-bottom: -30px;
+					padding-bottom: 31px;
+				}
+			}
+		}
+	}
+}
+/* ----------*ABOUT PAGE END*---------- */

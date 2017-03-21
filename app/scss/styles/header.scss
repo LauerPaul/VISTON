@@ -1,0 +1,192 @@
+/*---------------HEADER-----------------*/
+body.de{
+	.navbar-default .navbar-nav > li > a{
+		font-size: 19px;
+		
+		@media (max-width: 1224px) and (min-width: 768px){
+			font-size: 13px;
+		}
+	}
+}
+.navbar{
+	.container .navbar-header .navbar-brand{
+		@media (min-width: 768px) and (max-width: 992px){
+			padding: 26px 10px !important;
+		}
+	}
+	@media (max-width: 1224px){
+		min-height: 90px;
+		@media (min-width: 993px){
+			min-height: 85px;
+		}
+	}
+	@media (max-width: 992px){
+		@media (min-width: 768px){
+			min-height: 71px;
+		}
+	}
+	.navbar-nav{
+		li{
+			@media (min-width: 993px){
+				padding: 0 20px;
+			}
+			@media (min-width: 768px) and (max-width: 992px){
+				padding: 0 10px;
+			}
+			@media (max-width: 1224px){
+				@media (min-width: 993px){
+					&:first-child{
+						padding-left: 30px;
+					}
+				}
+			}
+			
+			a{
+				@media (max-width: 1224px){
+					font-size: 17px;
+					padding: 32px 0px;
+
+					@media (min-width: 768px){
+						font-size: 14px;
+					}
+				}
+				@media (min-width: 768px) and (max-width: 993px){
+					padding: 25px 0px;
+				}
+				@media (max-width: 767px){
+					color: #212121;
+					padding: 12px 0;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+		@media (max-width: 767px){
+			li.active > a{
+				border-bottom: 2px solid;
+			}
+		}
+	}
+	.navbar-right{
+		padding: 35px 0;
+		margin-right: -10px;
+
+		@media (max-width: 1224px){
+			padding: 28px 0;
+			@media (min-width: 993px){
+				padding: 30px 0;
+			}
+		}
+		@media (max-width: 992px){
+			@media (min-width: 768px){
+				padding: 25px 0 24px;
+			}
+		}
+		@media (max-width: 767px){
+			padding: 15px 0;
+		}
+		.input-group{
+			margin: 0 auto;
+			
+			@media (min-width: 768px){
+				display: none;
+			}
+		}
+		hr{
+			margin-top: 0px;
+			
+			@media (min-width: 768px){
+				display: none;
+			}
+		}
+		i{
+			width: 24px;
+			height: 24px;
+			background: url(../images/icons/search.png);
+			display: inline-block;
+			font-size: 22px;
+			margin-right: 10px;
+			position: relative;
+			top: 5px;
+			
+			@media (max-width: 1301px) and (min-weight: 1225px){
+				background-size: cover;
+				width: 22px;
+				height: 22px;
+			}
+			@media (max-width: 1224px){
+				background-size: cover;
+				width: 20px;
+				height: 20px;
+				@media (min-width: 768px){
+					width: 16px;
+					height: 16px;
+					top: 3px;
+				}
+			}
+		}
+		a{
+			letter-spacing: 0.5px;
+			font-family: 'Ubuntu-Light';
+			font-size: 18px;
+			color: white;
+			
+			&:hover{
+				color: $default-color;
+			}
+
+			@media (max-width: 1301px){
+				font-size: 16px;
+				@media (min-width: 768px){
+					font-size: 14px;
+				}
+			}
+			@media (max-width: 767px){
+				display: none;
+			}
+		}
+	}
+
+	.container{
+		.navbar-header{
+			@media (max-width: 767px){
+				.navbar-toggle{
+					margin-top: 26px;
+					margin-bottom: 26px;
+				}
+			}
+			.navbar-brand{
+				@media (max-width: 1224px){
+					min-width: inherit;
+					padding: 30px 10px;
+					height: initial;
+					img{
+						width: 120px;
+
+						@media (min-width: 992px){
+							width: 120px;
+						}
+					}
+				}
+				@media (max-width: 993px){
+					img{
+						width: 120px;
+						@media (min-width: 768px){
+							width: 90px;
+						}
+					}
+				}
+				@media (max-width: 767px){
+					padding: 26px 10px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px){
+		min-height: 50px;
+		height: 75px;
+	}
+}
+
+/* -----------*HEADER END*------------- */

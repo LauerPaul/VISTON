@@ -1,0 +1,27 @@
+/* ------------SEARCH MODAL------------ */
+#search-modal{
+	label{
+		margin-bottom: 10px;
+	}
+	.input-group{
+	    width: 100%;
+		text-align: center;
+		padding: 0 60px;
+		margin-bottom: 60px;
+		
+		input{
+			text-align: center;
+		}
+	}
+}
+.close{
+	color: #212121;
+	opacity: 0.8;
+	font-family: "Ubuntu-Regular";
+	
+	&:hover{
+		color: $default-color;
+		opacity: 1;
+	}
+}
+/* ---------*SEARCH MODAL END*--------- */
