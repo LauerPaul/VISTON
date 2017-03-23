@@ -20,3 +20,5 @@ function load_section(){
 	 
 	section.show().animate({'opacity': 1}, 200);
 }
+
+//istory.pushState('', document.title, window.location.pathname);

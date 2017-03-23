@@ -7325,3 +7325,14 @@ footer.white .container-fluid.contacts {
 
 /* ----------*ABOUT PAGE END*---------- */
 /* ------------------------------------ */
+#career.panel-group .panel {
+  border-radius: 0px;
+  box-shadow: none;
+  border: 0px; }
+  #career.panel-group .panel .panel-heading {
+    background: transparent;
+    border: 0px; }
+  #career.panel-group .panel .panel-body {
+    border: 0px; }
+
+/* ------------------------------------ */
