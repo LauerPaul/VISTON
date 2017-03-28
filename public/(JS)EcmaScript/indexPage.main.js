@@ -1,13 +1,110 @@
+//--------------------------------------------------------------------------------------
+//---------------------------- DOCUMENT READY FUNCTIONS --------------------------------
+//--------------------------------------------------------------------------------------
 jQuery(document).ready(function($) {
+	new WOW().init();
+	//----------------------------------------------------------------------------------
+	// -------------------------------- SLIDER INDEX PAGE ------------------------------
+	//----------------------------------------------------------------------------------	
 	$('.carousel').carousel({
 	  interval: 6000,
 	  pause: false,
 	  wrap: true
 	});
-	new WOW().init();
+	//----------------------------------------------------------------------------------
+	// ----------------------------- *SLIDER INDEX PAGE END* ---------------------------
+	//----------------------------------------------------------------------------------
+	// ---------------------------- SEARCH CLICK BUTTON HEADER -------------------------
+	//----------------------------------------------------------------------------------
+
+	$('a#search_group').click(function(){
+		$(this).parent().find('.input-group').show(180,'swing');
+		$('input#search').focus();
+		$('.navbar-nav').addClass('search');
+	});
+	$(document).on('click', function(e) {
+		if (!$(e.target).closest('input#search, a#search_group').length) {
+			$('a#search_group').parent().find('.input-group').hide(180,'swing');
+			$('.navbar-nav').removeClass('search');
+		}
+		e.stopPropagation();
+	});
+	//----------------------------------------------------------------------------------
+	// --------------------------- *SEARCH CLICK BUTTON HEADER END* --------------------
+	//----------------------------------------------------------------------------------
+	// ------------------------------ CHECKBOX AND RADIO STYLE -------------------------
+	//----------------------------------------------------------------------------------
+	$('input[type="radio"], input[type="checkbox"]').iCheck({
+		checkboxClass: 'checkbox',
+		radioClass: 'radio',
+		increaseArea: '20%' // optional
+	});
+	//----------------------------------------------------------------------------------
+	// ---------------------------- *CHECKBOX AND RADIO STYLE END* ---------------------
+	//----------------------------------------------------------------------------------
 });
-function scroll_down(){
-	var sec_block = $('#second-section').offset().top;
-	
-	$('html, body').animate({scrollTop: sec_block},1200);
-}
+//--------------------------------------------------------------------------------------
+//------------------------- *DOCUMENT READY FUNCTIONS END* -----------------------------
+//--------------------------------------------------------------------------------------
+//======================================================================================
+//--------------------------------------------------------------------------------------
+//----------------------------- FUNCTIONS SECTION --------------------------------------
+//--------------------------------------------------------------------------------------
+	//----------------------------------------------------------------------------------
+	//----------------------- INDEX PAGE SCROLL DOWN FUNCTION --------------------------
+	//----------------------------------------------------------------------------------	
+	function scroll_down(){
+		var sec_block = $('#second-section').offset().top;
+		$('html, body').animate({scrollTop: sec_block},1200);
+	}
+	//----------------------------------------------------------------------------------
+	//-------------------- *INDEX PAGE SCROLL DOWN FUNCTION END* -----------------------
+	//----------------------------------------------------------------------------------
+	//---------------------- AUTOCOMPLITE (SEARCH SECTION HEADER) ----------------------
+	//----------------------------------------------------------------------------------
+	$( function() {
+	$.widget( "custom.catcomplete", $.ui.autocomplete, {
+	  _create: function() {
+	    this._super();
+	    this.widget().menu( "option", "items", "> :not(.ui-autocomplete-category)" );
+	  },
+	  _renderMenu: function( ul, items ) {
+	    var that = this,
+	      currentCategory = "";
+	    $.each( items, function( index, item ) {
+	      var li;
+	      if ( item.category != currentCategory ) {
+	        ul.append( "<li class='ui-autocomplete-category'>" + item.category + "</li>" );
+	        currentCategory = item.category;
+	      }
+	      li = that._renderItemData( ul, item );
+	      if ( item.category ) {
+	        li.attr( "aria-label", item.category + " : " + item.label );
+	      }
+	    });
+	  }
+	});
+	var data = [
+	  { label: "anders", category: "" },
+	  { label: "andreas", category: "" },
+	  { label: "antal", category: "" },
+	  { label: "annhhx10", category: "Products" },
+	  { label: "annk K12", category: "Products" },
+	  { label: "annttop C13", category: "Products" },
+	  { label: "anders andersson", category: "People" },
+	  { label: "andreas andersson", category: "People" },
+	  { label: "andreas johnson", category: "People" }
+	];
+
+	$( "#search" ).catcomplete({
+	  delay: 0,
+	  source: data
+	});
+	} );
+	//----------------------------------------------------------------------------------
+	//------------------- *AUTOCOMPLITE (SEARCH SECTION HEADER) END* -------------------
+	//----------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------
+//-------------------------- *FUNCTIONS SECTION  END* ----------------------------------
+//--------------------------------------------------------------------------------------
+

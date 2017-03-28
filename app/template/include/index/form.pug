@@ -4,29 +4,53 @@
 		.col-md-12
 			h2.title.wow.fadeIn(data-wow-offset='120', data-wow-delay='0.2s')
 				span Свяжитесь с нами
-	form#form-send.row.wow.fadeIn(action='', method='post', data-wow-offset='100', data-wow-delay='0.2s')
-		//name
-		.col-md-12.text-center
-			label(for='name') Имя
-			.input-group
-				input.form-control#name(type='text', placeholder='Введите Ваше полное имя', name='name')
-		// e-mail
-		.col-md-12.text-center
-			label(for='email') ЭЛ. Почта
-			.input-group
-				input.form-control#email(type='email', placeholder='Введите Вашу электронную почту', name='email')
-		//tel
-		.col-md-12.text-center
-			label(for='tel') Телефон
-			.input-group
-				input.form-control#tel(type='tel', placeholder='Введите Ваш мобильный телефон', name='tel')
-		// comment
-		.col-md-12.text-center
-			label(for='comment') комментарий
-			.input-group
-				input.form-control#comment(type='text', placeholder='Введите Ваш комментарий', name='comment')
-		//send button
-		.col-md-12.text-center
-			.input-group.last
-				input.btn.btn-default.grey(type="submit", value='ОТПРАВИТЬ')
+			form#form-send.row.wow.fadeIn(action='', method='post', data-wow-offset='100', data-wow-delay='0.2s')
+				.col-md-6
+					.row
+						//name
+						.col-md-12.text-center
+							.input-group.pull-right
+								label(for='name') полное имя
+								input.form-control#name(type='text', placeholder='Введите Ваше полное имя', name='name', required)
+						// e-mail
+						.col-md-12.text-center
+							.input-group.pull-right
+								label(for='email') эл. почта
+								input.form-control#email(type='email', placeholder='Введите Вашу электронную почту', name='email', required)
+						//tel
+						.col-md-12.text-center
+							.input-group.pull-right
+								label(for='tel') телефон
+								input.form-control#tel(type='tel', placeholder='Введите Ваш мобильный телефон', name='tel', required)
+						//company
+						.col-md-12.text-center
+							.input-group.pull-right
+								label(for='company') компания
+								input.form-control#company(type='text', placeholder='Введите Ваш мобильный телефон', name='company')
+				.col-md-6
+					.row
+						//location
+						.col-md-12.text-center
+							.input-group
+								label(for='location') место нахождения
+								input.form-control#location(type='text', placeholder='Введите Ваше место нахождения', name='location')
+						//address
+						.col-md-12.text-center
+							.input-group
+								label(for='address') адрес
+								input.form-control#address(type='text', placeholder='Введите Ваш адрес', name='address')
+						// comment
+						.col-md-12.text-center
+							.input-group
+								label(for='comment') комментарий
+								textarea.form-control#comment(rows='5', placeholder='Введите Ваш комментарий', name='comment')
+						.col-md-12.text-center
+							.input-group
+								label.line
+									input(type='checkbox', name='agree', id='agree', required)
+									|Я согласен с Политикой конфиденциальности
+				//send button
+				.col-md-12.text-center
+					.input-group.last
+						input.btn.btn-default.grey(type="submit", value='ОТПРАВИТЬ')
 // *FORM END*

@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="../public/css/_lib/animate.min.css"/>
     <!--FONT AWESOME css-->
     <link rel="stylesheet" href="../public/css/_lib/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../public/css/_lib/jquery-ui.min.css"/>
     <!--default styles-->
     <link rel="stylesheet" href="../public/css/main.css"/>
     <!-- /++++++++++++++++++* STYLES END *++++++++++++++++++/-->
     <!-- /+++++++++++++++++++++ SCRIPT Jquery +++++++++++++++++++++/-->
     <script src="../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js"></script>
+    <script src="../public/(JS)EcmaScript/_lib/jquery-ui.min.js"></script>
     <!-- /++++++++++++++++++* SCRIPT Jquery END *++++++++++++++++++/-->
+    <!-- /+++++++++++++++++++++ SCRIPT ICHECK +++++++++++++++++++++/-->
+    <script src="../public/(JS)EcmaScript/_lib/icheck.min.js"></script>
+    <!-- /++++++++++++++++++ *SCRIPT ICHECK END* ++++++++++++++++++/-->
   </head>
 </html>
 <body>
@@ -37,10 +42,10 @@
           <li><a href="career.html">Карьера</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <div class="navbar-right"><a class="clear" data-toggle="modal" data-target="#search-modal"><i class="search"></i>Поиск</a>
+        <div class="navbar-right"><a class="clear" id="search_group"><i class="search"></i>Поиск</a>
           <hr/>
           <div class="input-group"> 
-            <input type="text" placeholder="Поиск..."/>
+            <input id="search" type="text" placeholder="Поиск..."/>
           </div>
         </div>
       </div>

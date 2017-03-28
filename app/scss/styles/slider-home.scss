@@ -9,14 +9,14 @@
 	@media (max-width: 1224px){
 		min-height: 90px;
 		@media (min-width: 993px){
-			top: -85px;
-			margin-bottom: -85px;
+			top: -88px;
+			margin-bottom: -87px;
 		}
 	}
 	@media (max-width: 992px){
 		@media (min-width: 768px){
-			margin-bottom: -71px;
-			top: -71px;
+			margin-bottom: -73px;
+			top: -74px;
 		}
 	}
 	@media (max-width: 767px){
@@ -132,6 +132,12 @@
 				color: white;
 				text-decoration: none;
 				
+				img {
+					margin-right: 10px;
+					position: relative;
+					top: -1px;
+				}
+				
 				&:hover{
 					color: $default-color;
 				}
@@ -181,14 +187,6 @@
 			color: white;
 			font-family: 'Ubuntu-Light';
 			
-			&:hover{
-				text-decoration: none;
-				color: $default-color;
-				
-				.mouse{
-					background-position: center bottom;
-				}
-			}
 			
 			@media (max-width: 767px){
 				font-size: 11px;
@@ -214,20 +212,37 @@
 				height: 22px;
 				display: block;
 				
-				i.fa{
-					margin-right: -2px;
-					display: block;
+				i.bottom{
+					margin-right: -1px;
 					position: relative;
 					bottom: 0;
 					animation: mouse 1s forwards 2s infinite;
-					
+					margin-top: 5px;
+					width: 12px;
+					height: 13px;
+					background: url(../images/icons/bottom.png) no-repeat center top;
+					display: inline-block;
+					    
 					&:first-child{
 						margin-bottom: -6px;
-					}
-					
+					}				
 				}
 			}
 			
+			&:hover{
+				text-decoration: none;
+				color: $default-color;
+				
+				.mouse{
+					background-position: center bottom;
+				}
+
+				.down-mouse{	
+					i.bottom{
+						background-position: center bottom;
+					}	
+				}
+			}
 			@media (max-width: 320px){
 				display: none;
 			}
@@ -240,6 +255,16 @@
 			text-align: right;
 			margin-bottom: 0px;
 			
+			li.active {
+				border-right: 4px solid $white;
+			}
+
+			li {
+				&:hover {
+					background: $default-color;
+				}
+			}
+
 			@media (max-width: 767px){
 				li, li.active{
 					width: 14px;

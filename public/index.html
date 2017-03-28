@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="../public/css/_lib/animate.min.css"/>
     <!--FONT AWESOME css-->
     <link rel="stylesheet" href="../public/css/_lib/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../public/css/_lib/jquery-ui.min.css"/>
     <!--default styles-->
     <link rel="stylesheet" href="../public/css/main.css"/>
     <!-- /++++++++++++++++++* STYLES END *++++++++++++++++++/-->
     <!-- /+++++++++++++++++++++ SCRIPT Jquery +++++++++++++++++++++/-->
     <script src="../public/(JS)EcmaScript/_lib/jquery-3.1.1.min.js"></script>
+    <script src="../public/(JS)EcmaScript/_lib/jquery-ui.min.js"></script>
     <!-- /++++++++++++++++++* SCRIPT Jquery END *++++++++++++++++++/-->
+    <!-- /+++++++++++++++++++++ SCRIPT ICHECK +++++++++++++++++++++/-->
+    <script src="../public/(JS)EcmaScript/_lib/icheck.min.js"></script>
+    <!-- /++++++++++++++++++ *SCRIPT ICHECK END* ++++++++++++++++++/-->
   </head>
 </html>
 <body>
@@ -37,10 +42,10 @@
           <li><a href="career.html">Карьера</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <div class="navbar-right"><a class="clear" data-toggle="modal" data-target="#search-modal"><i class="search"></i>Поиск</a>
+        <div class="navbar-right"><a class="clear" id="search_group"><i class="search"></i>Поиск</a>
           <hr/>
           <div class="input-group"> 
-            <input type="text" placeholder="Поиск..."/>
+            <input id="search" type="text" placeholder="Поиск..."/>
           </div>
         </div>
       </div>
@@ -80,7 +85,7 @@
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
         <!-- LANG button-->
-        <div class="btn-group lang-toggle dropup"><a class="dropdown-toggle" data-toggle="dropdown">RU <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+        <div class="btn-group lang-toggle dropup"><a class="dropdown-toggle" data-toggle="dropdown"> <img src="images/icons/flags/ru-ru.jpg"/>RU <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"></i></a>
           <ul class="dropdown-menu list-inline" role="menu">
             <li><a>EN</a></li>
             <li><a>DE</a></li>
@@ -88,7 +93,7 @@
         </div>
         <!-- *LANG button END*-->
         <!-- Mouse-scroll--><a class="mouse-scroll" onclick="scroll_down()"><span>Прокрутите вниз</span><br/><span class="mouse"></span>
-          <div class="down-mouse"><i class="fa fa-chevron-down" aria-hidden="true"></i><i class="fa fa-chevron-down" aria-hidden="true"></i></div></a>
+          <div class="down-mouse"><i class="bottom"></i></div></a>
         <!-- *Mouse-scroll END*-->
       </div>
     </div>
@@ -168,44 +173,80 @@
     <div class="row">
       <div class="col-md-12">
         <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>Свяжитесь с нами</span></h2>
+        <form class="row wow fadeIn" id="form-send" action="" method="post" data-wow-offset="100" data-wow-delay="0.2s">
+          <div class="col-md-6">
+            <div class="row">
+              <!--name-->
+              <div class="col-md-12 text-center">
+                <div class="input-group pull-right">
+                  <label for="name">полное имя</label>
+                  <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name" required="required"/>
+                </div>
+              </div>
+              <!-- e-mail-->
+              <div class="col-md-12 text-center">
+                <div class="input-group pull-right">
+                  <label for="email">эл. почта</label>
+                  <input class="form-control" id="email" type="email" placeholder="Введите Вашу электронную почту" name="email" required="required"/>
+                </div>
+              </div>
+              <!--tel-->
+              <div class="col-md-12 text-center">
+                <div class="input-group pull-right">
+                  <label for="tel">телефон</label>
+                  <input class="form-control" id="tel" type="tel" placeholder="Введите Ваш мобильный телефон" name="tel" required="required"/>
+                </div>
+              </div>
+              <!--company-->
+              <div class="col-md-12 text-center">
+                <div class="input-group pull-right">
+                  <label for="company">компания</label>
+                  <input class="form-control" id="company" type="text" placeholder="Введите Ваш мобильный телефон" name="company"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <!--location-->
+              <div class="col-md-12 text-center">
+                <div class="input-group">
+                  <label for="location">место нахождения</label>
+                  <input class="form-control" id="location" type="text" placeholder="Введите Ваше место нахождения" name="location"/>
+                </div>
+              </div>
+              <!--address-->
+              <div class="col-md-12 text-center">
+                <div class="input-group">
+                  <label for="address">адрес</label>
+                  <input class="form-control" id="address" type="text" placeholder="Введите Ваш адрес" name="address"/>
+                </div>
+              </div>
+              <!-- comment-->
+              <div class="col-md-12 text-center">
+                <div class="input-group">
+                  <label for="comment">комментарий</label>
+                  <textarea class="form-control" id="comment" rows="5" placeholder="Введите Ваш комментарий" name="comment"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="input-group">
+                  <label class="line">
+                    <input type="checkbox" name="agree" id="agree" required="required"/>Я согласен с Политикой конфиденциальности
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--send button-->
+          <div class="col-md-12 text-center">
+            <div class="input-group last">
+              <input class="btn btn-default grey" type="submit" value="ОТПРАВИТЬ"/>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-    <form class="row wow fadeIn" id="form-send" action="" method="post" data-wow-offset="100" data-wow-delay="0.2s">
-      <!--name-->
-      <div class="col-md-12 text-center">
-        <label for="name">Имя</label>
-        <div class="input-group">
-          <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name"/>
-        </div>
-      </div>
-      <!-- e-mail-->
-      <div class="col-md-12 text-center">
-        <label for="email">ЭЛ. Почта</label>
-        <div class="input-group">
-          <input class="form-control" id="email" type="email" placeholder="Введите Вашу электронную почту" name="email"/>
-        </div>
-      </div>
-      <!--tel-->
-      <div class="col-md-12 text-center">
-        <label for="tel">Телефон</label>
-        <div class="input-group">
-          <input class="form-control" id="tel" type="tel" placeholder="Введите Ваш мобильный телефон" name="tel"/>
-        </div>
-      </div>
-      <!-- comment-->
-      <div class="col-md-12 text-center">
-        <label for="comment">комментарий</label>
-        <div class="input-group">
-          <input class="form-control" id="comment" type="text" placeholder="Введите Ваш комментарий" name="comment"/>
-        </div>
-      </div>
-      <!--send button-->
-      <div class="col-md-12 text-center">
-        <div class="input-group last">
-          <input class="btn btn-default grey" type="submit" value="ОТПРАВИТЬ"/>
-        </div>
-      </div>
-    </form>
   </div>
   <!-- *FORM END*-->
   <!-- FOOTER SECTION-->

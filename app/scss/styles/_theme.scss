@@ -203,3 +203,55 @@ label{
 		width: 100%;
 	}
 }
+/* ---- Ceckbox --- */
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+	&::before {
+		content: '';
+		position: absolute;
+		width: 12px;
+		height: 12px;
+		left: -50%;
+		top: -50%;
+		right: -50%;
+		bottom: -50%;
+		margin: auto;
+		display: none;
+	}
+
+	&:hover {
+		&::before {
+			display: block;
+			background: $default-color;
+			opacity: 0.4;
+		}
+	}
+}
+.checkbox.checked {
+	position: relative;
+	
+    &::before{
+    	display: block;
+		background: $gray-dark;
+    }
+
+    &:hover {
+    	&::before {
+			opacity: 0.9;
+    	}
+    }
+}
+/* ------- AUTOCOMPLITE ------ */
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

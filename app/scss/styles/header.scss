@@ -27,6 +27,8 @@ body.de{
 	}
 	.navbar-nav{
 		li{
+			transition: all 0.135s ease-out 0.02s;
+			
 			@media (min-width: 993px){
 				padding: 0 20px;
 			}
@@ -34,6 +36,7 @@ body.de{
 				padding: 0 10px;
 			}
 			@media (max-width: 1224px){
+				transition: all 0.2s;
 				@media (min-width: 993px){
 					&:first-child{
 						padding-left: 30px;
@@ -42,6 +45,7 @@ body.de{
 			}
 			
 			a{
+				transition: all 0.1s ease-out 0.06s;
 				@media (max-width: 1224px){
 					font-size: 17px;
 					padding: 32px 0px;
@@ -67,9 +71,38 @@ body.de{
 			}
 		}
 	}
+	.navbar-nav.search {
+		li {
+			padding: 0 16px;
+			
+			@media (max-width: 1224px){
+				@media (min-width: 993px){
+					padding: 0 15px;
+				}
+			}
+			@media (max-width: 992px){
+				@media (min-width: 768px){
+					padding: 0 8px;
+				}
+			}
+			 a {
+				@media (max-width: 1224px){
+					@media (min-width: 993px){
+						font-size: 14px;
+					}
+				}
+				@media (max-width: 992px){
+					@media (min-width: 768px){
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
 	.navbar-right{
 		padding: 35px 0;
 		margin-right: -10px;
+		position: relative;
 
 		@media (max-width: 1224px){
 			padding: 28px 0;
@@ -87,9 +120,35 @@ body.de{
 		}
 		.input-group{
 			margin: 0 auto;
-			
+
 			@media (min-width: 768px){
 				display: none;
+				position: absolute;
+				right: 0;
+				padding: 0;
+				
+				input {
+					padding: 7px 15px;
+					border: none;
+					font-size: 14px;
+					
+					@media (max-width: 992px) and (min-width: 768px){
+						font-size: 12px;
+						padding: 5px 10px;
+					}
+				}
+			}
+			@media (max-width: 992px) and (min-width: 768px){
+				top: 20px;
+			}
+			@media (max-width: 1224px) and (min-width: 993px){
+				top: 25px;
+			}
+			@media (min-width: 1225px){
+				top: 35px;
+			}
+			@media (max-width: 767px){
+				display: table !important;
 			}
 		}
 		hr{
@@ -99,40 +158,47 @@ body.de{
 				display: none;
 			}
 		}
-		i{
-			width: 24px;
-			height: 24px;
-			background: url(../images/icons/search.png);
-			display: inline-block;
-			font-size: 22px;
-			margin-right: 10px;
-			position: relative;
-			top: 5px;
-			
-			@media (max-width: 1301px) and (min-weight: 1225px){
-				background-size: cover;
-				width: 22px;
-				height: 22px;
-			}
-			@media (max-width: 1224px){
-				background-size: cover;
-				width: 20px;
-				height: 20px;
-				@media (min-width: 768px){
-					width: 16px;
-					height: 16px;
-					top: 3px;
-				}
-			}
-		}
+		
 		a{
 			letter-spacing: 0.5px;
 			font-family: 'Ubuntu-Light';
 			font-size: 18px;
 			color: white;
+			transition: none;
+			
+			i.search {
+				width: 24px;
+				height: 24px;
+				background: url(../images/icons/search.png) no-repeat center top;
+				display: inline-block;
+				font-size: 22px;
+				margin-right: 10px;
+				position: relative;
+				top: 5px;
+				
+				@media (max-width: 1301px) and (min-weight: 1225px){
+					background-size: cover;
+					width: 22px;
+					height: 22px;
+				}
+				@media (max-width: 1224px){
+					background-size: cover;
+					width: 20px;
+					height: 20px;
+					@media (min-width: 768px){
+						width: 16px;
+						height: 16px;
+						top: 3px;
+					}
+				}
+			}
 			
 			&:hover{
 				color: $default-color;
+				
+				i.search {
+					background-position: center bottom;
+				}
 			}
 
 			@media (max-width: 1301px){
