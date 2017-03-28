@@ -1,0 +1,52 @@
+/* ----------------------------------------------------- */
+/* ------------ ACCORDION WITH TOGGLE ICONS ------------ */
+/* ----------------------------------------------------- */
+.panel-group {
+	margin: 0px;
+
+	.panel {
+		border-radius: 0px;
+		box-shadow: none;
+		border: 0px;
+		
+		&:first-child {
+			> .panel-heading {
+				padding-top: 0px;
+			}
+		}
+
+		.panel-heading {
+			background: transparent;
+			border-radius: 0;
+			border: 0px;
+			padding: 20px 15px 20px 0;
+			
+			
+			.panel-title {
+				a {
+					color: $default-color;
+					
+					.more-less {
+						font-weight: normal;
+						font-size: 16px;
+						margin-left: 10px;
+					}
+				}
+
+				a.collapsed {
+					color: $gray-dark;
+				}
+			}
+		}
+		.panel-body {
+			border: 0px;
+			padding: 15px 15px 40px 15px;
+		}
+	}
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top-color: transparent;
+}
+/* ----------------------------------------------------- */
+/* --------- *ACCORDION WITH TOGGLE ICONS END* --------- */
+/* ----------------------------------------------------- */

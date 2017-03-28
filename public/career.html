@@ -54,10 +54,10 @@
   <!-- * HEADER END *-->
   <!-- -------------------    TOP SECTION    ------------------- -->
   <div class="container-fluid slider title-bg" style="position: relative; background: url(../public/images/bg/career.jpg) no-repeat center top fixed;">
-    <h1 class="white">Карьера</h1>
+    <h1 class="white wow fadeIn" data-wow-delay="0.4s">Карьера</h1>
     <div class="wrapper-bottom-line">
       <div class="breadcrumbs">
-        <ul class="list-inline white">
+        <ul class="list-inline white wow fadeIn" data-wow-delay="0.8s">
           <li><a class="white" href="index.html">Главная</a></li>
           <li>Карьера</li>
         </ul>
@@ -65,30 +65,111 @@
     </div>
   </div>
   <!-- ------------------- *TOP SECTION END* ------------------- -->
+  <!-- ------------ CENTER SECTION -------------- -->
   <div class="container text">
     <div class="row">
       <div class="col-md-12">
-        <div class="panel-group" id="career">
+        <!-- ------------ COLLAPSE -------------- -->
+        <div class="panel-group" id="career" role="tablist" aria-multiselectable="true">
+          <!-- ------------ ITEM -------------- -->
           <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"><a data-toggle="collapse" data-parent="#career" href="#career_1">Collapsible Group 1</a></h4>
+            <!-- ------------ ITEM HEAD -------------- -->
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"><a role="button" data-toggle="collapse" data-parent="#career" href="#career_1">
+                   Lorem ipsum<i class="more-less glyphicon glyphicon-menu-up"></i></a></h4>
             </div>
-            <div class="panel-collapse collapse in" id="career_1">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </div>
+            <!-- -------------- ITEM BODY ------------ -->
+            <div class="panel-collapse collapse in" id="career_1" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua;</li>
+                  <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat;</li>
+                  <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur;</li>
+                  <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum;</li>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;</li>
+                  <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                </ul>
+                <button class="btn btn-default grey" data-toggle="modal" data-target="#resume-modal">отправить резюме</button>
+              </div>
             </div>
           </div>
+          <!-- ------------ ITEM -------------- -->
           <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"><a data-toggle="collapse" data-parent="#career" href="#career_2">Collapsible Group 2</a></h4>
+            <!-- ------------ ITEM HEAD -------------- -->
+            <div class="panel-heading" role="tab">
+              <h4 class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#career" href="#career_2">Lorem ipsum<i class="more-less glyphicon glyphicon-menu-down"></i></a></h4>
             </div>
-            <div class="panel-collapse collapse" id="career_2">
-              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</div>
+            <!-- -------------- ITEM BODY ------------ -->
+            <div class="panel-collapse collapse" id="career_2" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <ul>
+                  <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua;</li>
+                  <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat;</li>
+                  <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur;</li>
+                  <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum;</li>
+                  <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;</li>
+                  <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</li>
+                </ul>
+                <button class="btn btn-default grey" data-toggle="modal" data-target="#resume-modal">отправить резюме</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------- *COLLAPSE END* ----------- -->
+      </div>
+    </div>
+  </div>
+  <!-- --------- *CENTER SECTION END* ----------- -->
+  <!-- RESUME MODAL-->
+  <div class="modal fade" id="resume-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-body text-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal">x</button>
+          </div>
+          <div class="container" style="width: 80%;">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="title"><span>отправка резюме</span></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="input-group col-md-12">
+                    <label for="name">полное имя</label>
+                    <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group col-md-12">
+                    <label for="email">эл. почта</label>
+                    <input class="form-control" id="email" type="email" placeholder="Введите Ваше полное имя" name="email"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group col-md-12">
+                    <label for="tel">телефон</label>
+                    <input class="form-control" id="tel" type="text" placeholder="Введите Ваше полное имя" name="tel"/>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button class="file-attach" type="button">
+                      <input type="file"/>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- *RESUME MODAL END*-->
   <!-- FOOTER SECTION-->
   <footer class="white">
     <!-- -------------------    CONTACTS SECTION    --------------------->
@@ -134,23 +215,6 @@
     </div>
   </footer>
   <!-- *FOOTER SECTION END*-->
-  <!-- SEARCH MODAL-->
-  <div class="modal fade" id="search-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button class="close" type="button" data-dismiss="modal">x</button>
-        </div>
-        <div class="modal-body text-center">
-          <label for="search">Поиск</label>
-          <div class="input-group">
-            <input class="form-control" id="search" type="text" placeholder="Введите, продукцию, которую желаете найти" name="search"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- *SEARCH MODAL END*-->
   <!-- /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/-->
   <!--Bootstrap js include-->
   <script src="../public/(JS)EcmaScript/_lib/bootstrap.min.js"></script>
@@ -158,5 +222,7 @@
   <script src="../public/(JS)EcmaScript/_lib/wow.js"></script>
   <!-- Main JS include-->
   <script src="../public/(JS)EcmaScript/services.main.js"></script>
+  <!-- Main JS include-->
+  <script src="../public/(JS)EcmaScript/indexPage.main.js"></script>
   <!-- /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/-->
 </body>

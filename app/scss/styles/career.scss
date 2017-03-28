@@ -1,17 +1,25 @@
-#career.panel-group {
-	.panel {
-		border-radius: 0px;
-		box-shadow: none;
-		border: 0px;
+#career {
+	font-size: 18px;
+	
+	.panel-title {
+		a {
+			text-transform: uppercase;
+		}
+	}
+
+	.panel-body {
+		padding-left: 25px;
+	}
+
+	ul {
+		margin-bottom: 20px;
 		
-		.panel-heading {
-			background: transparent;
-			border: 0px;
+		li {
+	    	padding: 12px 0;
 		}
+	}
 
-		.panel-body {
-			border: 0px;
-		}
-
+	button {
+		margin-top: 20px;
 	}
 }

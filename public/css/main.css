@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ---------------------------------------
-* -----Copyright 2016-2017 VISTON
-* ---------- Font-end dev. Pavel Ugrynovych
+-----Copyright 2016-2017 VISTON
+---------- Font-end dev. Pavel Ugrynovych
 ------------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -6320,7 +6320,8 @@ a.clear {
   padding: 13px 37px;
   letter-spacing: 3.5px;
   word-spacing: 0px;
-  border-radius: 0px; }
+  border-radius: 0px;
+  text-transform: uppercase; }
   @media (max-width: 767px) {
     .btn-default {
       font-size: 12px;
@@ -6513,6 +6514,41 @@ label {
   overflow-y: auto;
   overflow-x: hidden; }
 
+/* ------------------------------------ */
+/* ----------------------------------------------------- */
+/* ------------ ACCORDION WITH TOGGLE ICONS ------------ */
+/* ----------------------------------------------------- */
+.panel-group {
+  margin: 0px; }
+  .panel-group .panel {
+    border-radius: 0px;
+    box-shadow: none;
+    border: 0px; }
+    .panel-group .panel:first-child > .panel-heading {
+      padding-top: 0px; }
+    .panel-group .panel .panel-heading {
+      background: transparent;
+      border-radius: 0;
+      border: 0px;
+      padding: 20px 15px 20px 0; }
+      .panel-group .panel .panel-heading .panel-title a {
+        color: #f39c12; }
+        .panel-group .panel .panel-heading .panel-title a .more-less {
+          font-weight: normal;
+          font-size: 16px;
+          margin-left: 10px; }
+      .panel-group .panel .panel-heading .panel-title a.collapsed {
+        color: #212121; }
+    .panel-group .panel .panel-body {
+      border: 0px;
+      padding: 15px 15px 40px 15px; }
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: transparent; }
+
+/* ----------------------------------------------------- */
+/* --------- *ACCORDION WITH TOGGLE ICONS END* --------- */
+/* ----------------------------------------------------- */
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* -------------ANIMATIONS------------- */
@@ -6872,16 +6908,26 @@ footer.white .container-fluid.contacts {
 /* ------------FOOTER END-------------- */
 /* ------------------------------------ */
 /* ------------SEARCH MODAL------------ */
-#search-modal label {
-  margin-bottom: 10px; }
+@media (min-width: 992px) {
+  #resume-modal .modal-lg {
+    width: 1100px; } }
 
-#search-modal .input-group {
-  width: 100%;
-  text-align: center;
-  padding: 0 60px;
-  margin-bottom: 60px; }
-  #search-modal .input-group input {
-    text-align: center; }
+#resume-modal h2.title {
+  margin: 20px 0 60px; }
+
+#resume-modal button.file-attach {
+  postion: relative;
+  border: 2px solid #f39c12;
+  background: #ffffff; }
+  #resume-modal button.file-attach input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; }
 
 .close {
   color: #212121;
@@ -7447,14 +7493,17 @@ footer.white .container-fluid.contacts {
 
 /* ----------*ABOUT PAGE END*---------- */
 /* ------------------------------------ */
-#career.panel-group .panel {
-  border-radius: 0px;
-  box-shadow: none;
-  border: 0px; }
-  #career.panel-group .panel .panel-heading {
-    background: transparent;
-    border: 0px; }
-  #career.panel-group .panel .panel-body {
-    border: 0px; }
+#career {
+  font-size: 18px; }
+  #career .panel-title a {
+    text-transform: uppercase; }
+  #career .panel-body {
+    padding-left: 25px; }
+  #career ul {
+    margin-bottom: 20px; }
+    #career ul li {
+      padding: 12px 0; }
+  #career button {
+    margin-top: 20px; }
 
 /* ------------------------------------ */

@@ -1,0 +1,32 @@
+﻿// RESUME MODAL
+.modal.fade#resume-modal(tabindex='-1', role='dialog')
+	.modal-dialog.modal-lg
+		.modal-body.text-center
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal') x
+				.container(style='width: 80%')
+					.row
+						.col-md-12
+							h2.title
+								span отправка резюме
+					.row
+						.col-md-6
+							.row
+								.input-group.col-md-12
+										label(for="name") полное имя
+										input.form-control#name(type='text', placeholder='Введите Ваше полное имя', name='name')
+							.row
+								.input-group.col-md-12
+										label(for="email") эл. почта
+										input.form-control#email(type='email', placeholder='Введите Ваше полное имя', name='email')
+							.row
+								.input-group.col-md-12
+										label(for="tel") телефон
+										input.form-control#tel(type='text', placeholder='Введите Ваше полное имя', name='tel')
+							.row
+								.col-md-12
+									button.file-attach(type='button')
+										input(type='file')
+						.col-md-6
+// *RESUME MODAL END*

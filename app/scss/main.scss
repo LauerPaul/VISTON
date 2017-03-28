@@ -1,6 +1,6 @@
 /* ---------------------------------------
-* -----Copyright 2016-2017 VISTON
-* ---------- Font-end dev. Pavel Ugrynovych
+-----Copyright 2016-2017 VISTON
+---------- Font-end dev. Pavel Ugrynovych
 ------------------------------------------ */
 //@import "variables";
 @import "variables";
@@ -18,12 +18,13 @@
 //@import "hover/hover";
 @import "bootstrap/theme";
 @import "include/_mixin";
-//@import "_mixin";
 
 /* ------------------------------------ */
 @import "include/fonts";
 /* ------------------------------------ */
 @import "styles/_theme";
+/* ------------------------------------ */
+@import "styles/collapse";
 /* ------------------------------------ */
 @import "styles/animate";
 /* ------------------------------------ */
@@ -31,7 +32,7 @@
 /* ------------------------------------ */
 @import "styles/footer";
 /* ------------------------------------ */
-@import "styles/search-modal";
+@import "styles/modals";
 /* ------------------------------------ */
 @import "styles/slider-home";
 /* ------------------------------------ */

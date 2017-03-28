@@ -1,17 +1,50 @@
+// ------------ CENTER SECTION -------------- 
 .container.text
 	.row
 		.col-md-12
-			.panel-group#career
+			// ------------ COLLAPSE -------------- 
+			.panel-group#career(role='tablist', aria-multiselectable='true')
+				// ------------ ITEM -------------- 
 				.panel.panel-default
-					.panel-heading
+					// ------------ ITEM HEAD -------------- 
+					.panel-heading(role='tab')
 						h4.panel-title
-							a(data-toggle='collapse', data-parent='#career' href='#career_1') Collapsible Group 1
-					#career_1.panel-collapse.collapse.in
-						.panel-body Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-				.panel.panel-default
-					.panel-heading
-						h4.panel-title
-							a(data-toggle='collapse', data-parent='#career', href='#career_2') Collapsible Group 2
-					#career_2.panel-collapse.collapse
-						.panel-body Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							a(role='button', data-toggle='collapse', data-parent='#career' href='#career_1') 
+								|Lorem ipsum
+								i.more-less.glyphicon.glyphicon-menu-up
+					// -------------- ITEM BODY ------------ 
+					#career_1.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua;
+								li Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat;
+								li Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur;
+								li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum;
+								li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+								li Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+							
+							button.btn.btn-default.grey(data-toggle='modal', data-target='#resume-modal') отправить резюме
 
+				// ------------ ITEM -------------- 
+				.panel.panel-default
+					// ------------ ITEM HEAD -------------- 
+					.panel-heading(role='tab')
+						h4.panel-title
+							a.collapsed(role='button', data-toggle='collapse', data-parent='#career', href='#career_2')
+								|Lorem ipsum
+								i.more-less.glyphicon.glyphicon-menu-down
+					// -------------- ITEM BODY ------------ 
+					#career_2.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
+						.panel-body
+							ul
+								li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua;
+								li Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat;
+								li Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur;
+								li Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum;
+								li Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+								li Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+			
+							button.btn.btn-default.grey(data-toggle='modal', data-target='#resume-modal') отправить резюме
+
+			// --------- *COLLAPSE END* ----------- 
+// --------- *CENTER SECTION END* ----------- 
