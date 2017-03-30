@@ -13,20 +13,45 @@
 					.row
 						.col-md-6
 							.row
-								.input-group.col-md-12
-										label(for="name") полное имя
+								.col-md-12
+									.input-group
+										label(for='name') полное имя
 										input.form-control#name(type='text', placeholder='Введите Ваше полное имя', name='name')
 							.row
-								.input-group.col-md-12
-										label(for="email") эл. почта
+								.col-md-12
+									.input-group
+										label(for='email') эл. почта
 										input.form-control#email(type='email', placeholder='Введите Ваше полное имя', name='email')
 							.row
-								.input-group.col-md-12
-										label(for="tel") телефон
+								.col-md-12
+									.input-group
+										label(for='tel') телефон
 										input.form-control#tel(type='text', placeholder='Введите Ваше полное имя', name='tel')
+						.col-md-6
 							.row
 								.col-md-12
-									button.file-attach(type='button')
-										input(type='file')
+									.input-group
+										label(for='comment') сопроводительное письмо
+										textarea.form-control#comment(placeholder='Введите Ваше сопроводительное письмо', name='comment', rows='11')
+							.row
+								.col-md-12
+									.input-group
+										label.line
+											input#agree(type='checkbox', name='agree', required)
+											|Я согласен с Политикой конфиденциальности
+					.row
 						.col-md-6
+							.input-group
+								button.btn.file-attach(type='button') отправить резюме
+									input(type='file', name='resume')
+								p Форматы файлов: doc, docx, rtf, txt, odt, pdf
+						.col-md-6
+							.input-group
+								button.btn.file-attach(type='button') отправить резюме
+									input(type='file', name='diplom')
+								p Форматы файлов: doc, docx, rtf, txt, odt, pdf
+					.row
+						.col-md-12.text-center
+							.input-group.send
+								button.btn.btn-default.grey отправить
 // *RESUME MODAL END*

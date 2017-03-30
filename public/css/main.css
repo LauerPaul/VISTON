@@ -6514,6 +6514,19 @@ label {
   overflow-y: auto;
   overflow-x: hidden; }
 
+/* -------------------------- */
+label.line {
+  font-family: "Ubuntu-Regular";
+  text-transform: inherit;
+  text-align: left;
+  font-size: 14px;
+  float: left;
+  margin-bottom: 0px; }
+  label.line input[type='checkbox'] {
+    display: inline-block;
+    float: left;
+    width: 30px; }
+
 /* ------------------------------------ */
 /* ----------------------------------------------------- */
 /* ------------ ACCORDION WITH TOGGLE ICONS ------------ */
@@ -6913,12 +6926,39 @@ footer.white .container-fluid.contacts {
     width: 1100px; } }
 
 #resume-modal h2.title {
-  margin: 20px 0 60px; }
+  margin: 20px 0 50px; }
+
+#resume-modal .input-group {
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 30px; }
+  #resume-modal .input-group input, #resume-modal .input-group textarea {
+    border-radius: 0;
+    text-align: center; }
+  #resume-modal .input-group label.line {
+    margin-top: 2px; }
+  #resume-modal .input-group textarea {
+    resize: none; }
+
+#resume-modal .input-group.send {
+  display: inline-block;
+  margin-bottom: 80px; }
+  #resume-modal .input-group.send button {
+    width: 100%; }
 
 #resume-modal button.file-attach {
-  postion: relative;
+  position: relative;
   border: 2px solid #f39c12;
-  background: #ffffff; }
+  background: #ffffff;
+  width: 100%;
+  padding: 13px 37px;
+  letter-spacing: 3.5px;
+  word-spacing: 0px;
+  border-radius: 0px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Ubuntu-Bold';
+  cursor: pointer; }
   #resume-modal button.file-attach input[type='file'] {
     opacity: 0;
     position: absolute;
@@ -6927,7 +6967,15 @@ footer.white .container-fluid.contacts {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
+  #resume-modal button.file-attach:hover {
+    background: #f39c12;
+    border: 2px solid #f39c12;
+    color: #ffffff; }
+
+#resume-modal p {
+  margin-top: 5px; }
 
 .close {
   color: #212121;
@@ -7279,17 +7327,6 @@ footer.white .container-fluid.contacts {
       width: 100%;
       text-align: center;
       border-radius: 0px; }
-    #form-send.row .input-group label.line {
-      font-family: "Ubuntu-Regular";
-      text-transform: inherit;
-      text-align: left;
-      font-size: 14px;
-      float: left;
-      margin-bottom: 0px; }
-      #form-send.row .input-group label.line input[type='checkbox'] {
-        display: inline-block;
-        float: left;
-        width: 30px; }
     @media (max-width: 992px) {
       #form-send.row .input-group {
         float: none !important;
@@ -7505,5 +7542,38 @@ footer.white .container-fluid.contacts {
       padding: 12px 0; }
   #career button {
     margin-top: 20px; }
+
+/* ------------------------------------ */
+.contacts .title {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-family: 'Ubuntu-Bold'; }
+
+.contacts a {
+  font-size: 18px; }
+
+.map-container {
+  margin-top: 40px;
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+  .map-container .map-mask {
+    min-width: 100%;
+    min-height: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: opacity 0.5s, bottom 1.5s; }
+    .map-container .map-mask img {
+      min-width: 100%;
+      min-height: 100%; }
+  .map-container:hover .map-mask {
+    opacity: 0;
+    bottom: -100%;
+    top: auto; }
 
 /* ------------------------------------ */

@@ -1,0 +1,42 @@
+.contacts {
+	.title {
+		text-transform: uppercase;
+		font-size: 21px;
+		font-family: 'Ubuntu-Bold';
+	}
+	a {
+		font-size: 18px;
+	}
+}
+.map-container {
+	margin-top: 40px;
+	height: 400px;
+	width: 100%;
+	position: relative;
+    overflow: hidden;
+
+	.map-mask {
+		min-width: 100%;
+		min-height: 100%;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		transition: opacity 0.5s, bottom 1.5s;
+		
+		img {
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+
+	&:hover{
+		.map-mask {
+			opacity: 0;
+			bottom:-100%;
+			top: auto;
+		}
+	}
+}

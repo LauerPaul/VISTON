@@ -137,32 +137,74 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="row">
-                  <div class="input-group col-md-12">
-                    <label for="name">полное имя</label>
-                    <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name"/>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-group col-md-12">
-                    <label for="email">эл. почта</label>
-                    <input class="form-control" id="email" type="email" placeholder="Введите Ваше полное имя" name="email"/>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-group col-md-12">
-                    <label for="tel">телефон</label>
-                    <input class="form-control" id="tel" type="text" placeholder="Введите Ваше полное имя" name="tel"/>
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <label for="name">полное имя</label>
+                      <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name"/>
+                    </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <button class="file-attach" type="button">
-                      <input type="file"/>
-                    </button>
+                    <div class="input-group">
+                      <label for="email">эл. почта</label>
+                      <input class="form-control" id="email" type="email" placeholder="Введите Ваше полное имя" name="email"/>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <label for="tel">телефон</label>
+                      <input class="form-control" id="tel" type="text" placeholder="Введите Ваше полное имя" name="tel"/>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6"></div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <label for="comment">сопроводительное письмо</label>
+                      <textarea class="form-control" id="comment" placeholder="Введите Ваше сопроводительное письмо" name="comment" rows="11"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <label class="line">
+                        <input id="agree" type="checkbox" name="agree" required="required"/>Я согласен с Политикой конфиденциальности
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input-group">
+                  <button class="btn file-attach" type="button">отправить резюме
+                    <input type="file" name="resume"/>
+                  </button>
+                  <p>Форматы файлов: doc, docx, rtf, txt, odt, pdf</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <button class="btn file-attach" type="button">отправить резюме
+                    <input type="file" name="diplom"/>
+                  </button>
+                  <p>Форматы файлов: doc, docx, rtf, txt, odt, pdf</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="input-group send">
+                  <button class="btn btn-default grey">отправить</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
