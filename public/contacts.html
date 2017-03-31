@@ -31,16 +31,16 @@
   <nav class="navbar navbar-default" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"> <img src="../public/images/logo/logo.png" alt="Viston"/></a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#menu-collapse"><span class="sr-only"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"> <img src="../public/images/logo/logo.png" alt="Viston"/></a>
       </div>
       <div class="collapse navbar-collapse" id="menu-collapse">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="products.html">Продукция</a></li>
           <li><a href="services.html">Услуги</a></li>
           <li><a href="about.html">О нас</a></li>
           <li><a href="career.html">Карьера</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li class="active"><a href="contacts.html">Контакты</a></li>
         </ul>
         <div class="navbar-right"><a class="clear" id="search_group"><i class="search"></i>Поиск</a>
           <hr/>
@@ -66,114 +66,116 @@
   </div>
   <!-- ------------------- *TOP SECTION END* ------------------- -->
   <!-- ------------ CENTER SECTION -------------- -->
-  <!-- ------------ FEEDBACK SECTION -------------- -->
-  <!-- FORM-->
-  <div class="container" id="form-link">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>Свяжитесь с нами</span></h2>
-        <form class="row wow fadeIn" id="form-send" action="" method="post" data-wow-offset="100" data-wow-delay="0.2s">
-          <div class="col-md-6">
-            <div class="row">
-              <!--name-->
-              <div class="col-md-12 text-center">
-                <div class="input-group pull-right">
-                  <label for="name">полное имя</label>
-                  <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name" required="required"/>
+  <div class="contacts-wrapper">
+    <!-- ------------ FEEDBACK SECTION -------------- -->
+    <!-- FORM-->
+    <div class="container" id="form-link">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>Свяжитесь с нами</span></h2>
+          <form class="row wow fadeIn" id="form-send" action="" method="post" data-wow-offset="100" data-wow-delay="0.2s">
+            <div class="col-md-6">
+              <div class="row">
+                <!--name-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group pull-right">
+                    <label for="name">полное имя</label>
+                    <input class="form-control" id="name" type="text" placeholder="Введите Ваше полное имя" name="name" required="required"/>
+                  </div>
                 </div>
-              </div>
-              <!-- e-mail-->
-              <div class="col-md-12 text-center">
-                <div class="input-group pull-right">
-                  <label for="email">эл. почта</label>
-                  <input class="form-control" id="email" type="email" placeholder="Введите Вашу электронную почту" name="email" required="required"/>
+                <!-- e-mail-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group pull-right">
+                    <label for="email">эл. почта</label>
+                    <input class="form-control" id="email" type="email" placeholder="Введите Вашу электронную почту" name="email" required="required"/>
+                  </div>
                 </div>
-              </div>
-              <!--tel-->
-              <div class="col-md-12 text-center">
-                <div class="input-group pull-right">
-                  <label for="tel">телефон</label>
-                  <input class="form-control" id="tel" type="tel" placeholder="Введите Ваш мобильный телефон" name="tel" required="required"/>
+                <!--tel-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group pull-right">
+                    <label for="tel">телефон</label>
+                    <input class="form-control" id="tel" type="tel" placeholder="Введите Ваш мобильный телефон" name="tel" required="required"/>
+                  </div>
                 </div>
-              </div>
-              <!--company-->
-              <div class="col-md-12 text-center">
-                <div class="input-group pull-right">
-                  <label for="company">компания</label>
-                  <input class="form-control" id="company" type="text" placeholder="Введите Ваш мобильный телефон" name="company"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="row">
-              <!--location-->
-              <div class="col-md-12 text-center">
-                <div class="input-group">
-                  <label for="location">место нахождения</label>
-                  <input class="form-control" id="location" type="text" placeholder="Введите Ваше место нахождения" name="location"/>
-                </div>
-              </div>
-              <!--address-->
-              <div class="col-md-12 text-center">
-                <div class="input-group">
-                  <label for="address">адрес</label>
-                  <input class="form-control" id="address" type="text" placeholder="Введите Ваш адрес" name="address"/>
-                </div>
-              </div>
-              <!-- comment-->
-              <div class="col-md-12 text-center">
-                <div class="input-group">
-                  <label for="comment">комментарий</label>
-                  <textarea class="form-control" id="comment" rows="5" placeholder="Введите Ваш комментарий" name="comment"></textarea>
-                </div>
-              </div>
-              <div class="col-md-12 text-center">
-                <div class="input-group">
-                  <label class="line">
-                    <input type="checkbox" name="agree" id="agree" required="required"/>Я согласен с Политикой конфиденциальности
-                  </label>
+                <!--company-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group pull-right">
+                    <label for="company">компания</label>
+                    <input class="form-control" id="company" type="text" placeholder="Введите Ваш мобильный телефон" name="company"/>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!--send button-->
-          <div class="col-md-12 text-center">
-            <div class="input-group last">
-              <input class="btn btn-default grey" type="submit" value="ОТПРАВИТЬ"/>
+            <div class="col-md-6">
+              <div class="row">
+                <!--location-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group">
+                    <label for="location">место нахождения</label>
+                    <input class="form-control" id="location" type="text" placeholder="Введите Ваше место нахождения" name="location"/>
+                  </div>
+                </div>
+                <!--address-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group">
+                    <label for="address">адрес</label>
+                    <input class="form-control" id="address" type="text" placeholder="Введите Ваш адрес" name="address"/>
+                  </div>
+                </div>
+                <!-- comment-->
+                <div class="col-md-12 text-center">
+                  <div class="input-group">
+                    <label for="comment">комментарий</label>
+                    <textarea class="form-control" id="comment" rows="5" placeholder="Введите Ваш комментарий" name="comment"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <div class="input-group">
+                    <label class="line">
+                      <input type="checkbox" name="agree" id="agree" required="required"/>Я согласен с Политикой конфиденциальности
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- *FORM END*-->
-  <!-- ------------ CONTACTS SECTION -------------- -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>наши контакты</span></h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="pull-left text-center contacts">
-          <p class="title">телефон</p><a href="tel:+80671234567">+8 067 123 45 67</a>
+            <!--send button-->
+            <div class="col-md-12 text-center">
+              <div class="input-group last">
+                <input class="btn btn-default grey" type="submit" value="ОТПРАВИТЬ"/>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="col-md-8">
-        <div class="text-center contacts">
-          <p class="title">адрес</p><a>Deira, Baniyas road,Al Masraf Tower, office 1105</a>
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="pull-right text-center contacts">
-          <p class="title">эл. почта</p><a href="mailto:info@viston.com" target="_blank">info@viston.com</a>
+    </div>
+    <!-- *FORM END*-->
+    <!-- ------------ CONTACTS SECTION -------------- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="title wow fadeIn" data-wow-offset="120" data-wow-delay="0.2s"><span>наши контакты</span></h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12">
-          <div class="map-container" id="map"><img class="map-mask" src="images/bg/map.jpg" alt="location_map"/></div>
+        <div class="col-md-2">
+          <div class="pull-left text-center contacts">
+            <p class="title">телефон</p><a href="tel:+80671234567">+8 067 123 45 67</a>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="text-center contacts">
+            <p class="title">адрес</p><a>Deira, Baniyas road,Al Masraf Tower, office 1105</a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="pull-right text-center contacts">
+            <p class="title">эл. почта</p><a href="mailto:info@viston.com" target="_blank">info@viston.com</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map-container" id="map"><img class="map-mask" src="images/bg/map.jpg" alt="location_map"/></div>
+          </div>
         </div>
       </div>
     </div>

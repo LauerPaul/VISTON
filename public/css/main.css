@@ -7544,21 +7544,25 @@ footer.white .container-fluid.contacts {
     margin-top: 20px; }
 
 /* ------------------------------------ */
-.contacts .title {
+.contacts-wrapper #form-send.row .last {
+  margin-bottom: 10px; }
+
+.contacts-wrapper .contacts .title {
   text-transform: uppercase;
   font-size: 21px;
   font-family: 'Ubuntu-Bold'; }
 
-.contacts a {
+.contacts-wrapper .contacts a {
   font-size: 18px; }
 
-.map-container {
+.contacts-wrapper .map-container {
   margin-top: 40px;
+  margin-bottom: 80px;
   height: 400px;
   width: 100%;
   position: relative;
   overflow: hidden; }
-  .map-container .map-mask {
+  .contacts-wrapper .map-container .map-mask {
     min-width: 100%;
     min-height: 100%;
     cursor: pointer;
@@ -7568,10 +7572,10 @@ footer.white .container-fluid.contacts {
     right: 0;
     left: 0;
     transition: opacity 0.5s, bottom 1.5s; }
-    .map-container .map-mask img {
+    .contacts-wrapper .map-container .map-mask img {
       min-width: 100%;
       min-height: 100%; }
-  .map-container:hover .map-mask {
+  .contacts-wrapper .map-container:hover .map-mask {
     opacity: 0;
     bottom: -100%;
     top: auto; }

@@ -1,0 +1,12 @@
+- var x = 1;
+- var top_data = { title: "Продукция", img: "../public/images/bg/cranes_bridge.jpg", title_2: "Краны мостовые", top_link: "products.html" };
+- var production_button = false;
+
+include mixins/top-section
+include include/head
+body
+	include include/header
+	+top-section(top_data)
+	include include/products/center_block
+	include include/footer_
+	include include/scripts

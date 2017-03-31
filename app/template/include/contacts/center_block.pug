@@ -1,29 +1,29 @@
 // ------------ CENTER SECTION -------------- 
+.contacts-wrapper
+	// ------------ FEEDBACK SECTION -------------- 
+	include ../index/form
 
-// ------------ FEEDBACK SECTION -------------- 
-include ../index/form
-
-// ------------ CONTACTS SECTION -------------- 
-.container
-	.row
-		.col-md-12
-			h2.title.wow.fadeIn(data-wow-offset='120', data-wow-delay='0.2s')
-				span наши контакты
-	.row
-		.col-md-2
-			.pull-left.text-center.contacts
-				p.title телефон
-				a(href='tel:+80671234567') +8 067 123 45 67
-		.col-md-8
-			.text-center.contacts
-				p.title адрес
-				a Deira, Baniyas road,Al Masraf Tower, office 1105
-		.col-md-2
-			.pull-right.text-center.contacts
-				p.title эл. почта
-				a(href='mailto:info@viston.com', target='_blank') info@viston.com
+	// ------------ CONTACTS SECTION -------------- 
+	.container
 		.row
 			.col-md-12
-				#map.map-container
-					img.map-mask(src='images/bg/map.jpg', alt='location_map')
+				h2.title.wow.fadeIn(data-wow-offset='120', data-wow-delay='0.2s')
+					span наши контакты
+		.row
+			.col-md-2
+				.pull-left.text-center.contacts
+					p.title телефон
+					a(href='tel:+80671234567') +8 067 123 45 67
+			.col-md-8
+				.text-center.contacts
+					p.title адрес
+					a Deira, Baniyas road,Al Masraf Tower, office 1105
+			.col-md-2
+				.pull-right.text-center.contacts
+					p.title эл. почта
+					a(href='mailto:info@viston.com', target='_blank') info@viston.com
+			.row
+				.col-md-12
+					#map.map-container
+						img.map-mask(src='images/bg/map.jpg', alt='location_map')
 // --------- *CENTER SECTION END* ----------- 

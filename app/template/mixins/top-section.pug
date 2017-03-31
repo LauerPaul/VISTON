@@ -7,5 +7,11 @@ mixin top-section(top)
 				ul.list-inline.white.wow.fadeIn(data-wow-delay='0.8s')
 					li
 						a.white(href='index.html') Главная
-					li= top.title
+					- if(!top.title_2){
+					li= top.title	
+					-}else{
+					li
+						a.white(href= top.top_link)= top.title
+					li= top.title_2
+					-}
 	// ------------------- *TOP SECTION END* ------------------- 
