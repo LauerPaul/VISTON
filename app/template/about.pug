@@ -1,17 +1,10 @@
+- var top_data = { title: "О компании", img: "../public/images/bg/about.jpg" };
+
+include include/top-section
 include include/head
 body
 	include include/header
-	include include/about/top
+	+top-section(top_data)
 	include include/about/center_block
 	include include/footer_
-
-	// /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/
-
-	//Bootstrap js include
-	script(src='../public/(JS)EcmaScript/_lib/bootstrap.min.js')
-	// WOW JS include
-	script(src='../public/(JS)EcmaScript/_lib/wow.js')
-	// Main JS include
-	script(src='../public/(JS)EcmaScript/services.main.js')
-
-	// /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/
+	include include/scripts

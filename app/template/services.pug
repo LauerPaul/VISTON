@@ -1,17 +1,10 @@
+- var top_data = { title: "Услуги", img: "../public/images/bg/services.jpg" };
+
+include include/top-section
 include include/head
 body
 	include include/header
-	include include/service/top
+	+top-section(top_data)
 	include include/service/center_block
 	include include/footer_
-
-	// /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/
-
-	//Bootstrap js include
-	script(src='../public/(JS)EcmaScript/_lib/bootstrap.min.js')
-	// WOW JS include
-	script(src='../public/(JS)EcmaScript/_lib/wow.js')
-	// Main JS include
-	script(src='../public/(JS)EcmaScript/services.main.js')
-
-	// /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/
+	include include/scripts

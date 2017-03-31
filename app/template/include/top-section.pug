@@ -1,0 +1,11 @@
+mixin top-section(top)
+	// -------------------    TOP SECTION    ------------------- 
+	.container-fluid.slider.title-bg(style='position: relative; background: url('+top.img+') no-repeat center top fixed;')
+		h1.white.wow.fadeIn(data-wow-delay='0.4s')= top.title
+		.wrapper-bottom-line
+			.breadcrumbs
+				ul.list-inline.white.wow.fadeIn(data-wow-delay='0.8s')
+					li
+						a.white(href='index.html') Главная
+					li= top.title
+	// ------------------- *TOP SECTION END* ------------------- 

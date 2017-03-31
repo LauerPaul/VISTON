@@ -1,15 +1,10 @@
+- var top_data = { title: "Контакты", img: "../public/images/bg/contacts.jpg" };
+
+include include/top-section
 include include/head
 body
 	include include/header
-	include include/contacts/top
+	+top-section(top_data)
 	include include/contacts/center_block
-	include include/footer_
-
-	// /+++++++++++++++++++++ SCRIPTS +++++++++++++++++++++/
-
-	//Bootstrap js include
-	script(src='../public/(JS)EcmaScript/_lib/bootstrap.min.js')
-	// WOW JS include
-	script(src='../public/(JS)EcmaScript/_lib/wow.js')
-
-	// /++++++++++++++++++* SCRIPTS END *++++++++++++++++++++/
+	include include/footer
+	include include/scripts
