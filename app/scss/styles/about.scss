@@ -1,6 +1,9 @@
 /* ------------ABOUT PAGE ------------- */
 .container-fluid.about{
 	border-bottom: 1px solid #c7c7c7;
+	@media (max-width: 991px) and (min-width: 768px) {
+		border-bottom: 0px;
+	}
 	
 	.menu.about{
 		margin-bottom: 0px;
@@ -14,7 +17,11 @@
 			&:last-child{
 				border-right: 0px;
 				text-align: right;
+				@media (max-width: 991px) {
+					text-align: center;
+				}
 			}
+
 			
 			a{
 				font-family: 'Ubuntu-Bold';
@@ -29,6 +36,16 @@
 				font-size: 12px;
 			}
 
+			@media (max-width: 991px) {
+				&:nth-child(2){
+					border-right: 0px;
+				}
+				border-bottom: 1px solid #c7c7c7;
+			}
+			@media (max-width: 767px) {
+				padding: 10px 20px;
+				border: none;
+			}
 		}
 
 		li.active{
@@ -40,6 +57,12 @@
 				@media (max-width: 1350px){
 					margin-bottom: -30px;
 					padding-bottom: 31px;
+				}
+				@media (max-width: 767px) {
+					padding-bottom: 0px;
+					margin-bottom: 0px;
+					border: none;
+					color: $default-color;
 				}
 			}
 		}

@@ -3,14 +3,40 @@
 		margin-bottom: 10px;
 	}
 
+	@media (min-width: 992px) {
+		.text-center.contacts.hide-mini {
+			display: none;
+		}
+	}
+	@media (max-width: 991px) {
+		.contacts.mail {
+			display: none;
+		}
+		.contacts.tel, .contacts.hide-mini {
+			float: none !important;
+			display: inline-block;
+			padding: 0px 20px 10px 20px;
+		}
+		.col-md-3.col-sm-12.mini {
+			text-align: center;
+			margin-top: 40px;
+		}
+	}
+
 	.contacts {
 		.title {
 			text-transform: uppercase;
 			font-size: 21px;
 			font-family: 'Ubuntu-Bold';
+			@media (max-width: 991px) {
+				font-size: 18px;
+			}
 		}
 		a {
 			font-size: 18px;
+			@media (max-width: 991px) {
+				font-size: 16px;
+			}
 		}
 	}
 	.map-container {
@@ -20,17 +46,25 @@
 		width: 100%;
 		position: relative;
 	    overflow: hidden;
-
+	    
+		@media (max-width: 767px) {
+			height: 300px;
+	    }
+		@media (max-width: 500px) { 
+			height: 200px;
+		}
 		.map-mask {
 			min-width: 100%;
 			min-height: 100%;
 			cursor: pointer;
 			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
+			top: -50%;
+			bottom: -50%;
+			right: -50%;
+			left: -50%;
 			transition: opacity 0.5s, bottom 1.5s;
+			height: 100%;
+		    margin: auto;
 			
 			img {
 				min-width: 100%;

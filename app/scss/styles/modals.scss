@@ -8,11 +8,33 @@
 
 	h2.title {
 		margin: 20px 0 50px;
+		
+		@media (max-width: 768px) {
+			font-size: 24px !important;
+			margin: 20px 0 40px;
+		}
+		@media (max-width: 992px) {
+			span::before {
+				display: none;
+			}
+			span::after {
+				display: none;
+			}
+		}
+		@media (max-width: 500px) { 
+			margin-top: 0px;
+			font-size: 18px !important;
+			margin-bottom: 25px;
+		}
 	}
 	.input-group {
 		width: 100%;
 		max-width: 380px;
+		margin: 0 auto;
 		margin-bottom: 30px;
+		@media (max-width: 768px) {
+			margin-bottom: 10px;
+		}
 		
 		input, textarea {
 			border-radius: 0;
@@ -31,6 +53,9 @@
 	.input-group.send {
 		display: inline-block;
 		margin-bottom: 80px;
+		@media (max-width: 500px) { 
+			margin-bottom: 25px;
+		}
 		
 		button{
 			width: 100%;
@@ -50,6 +75,16 @@
 		font-size: 16px;
 		font-family: 'Ubuntu-Bold';
 		cursor: pointer;
+		
+		@media (max-width: 992px) {
+			font-size: 14px;
+		}
+		@media (max-width: 768px) { 
+			font-size: 12px;
+		}
+		@media (max-width: 500px) { 
+			font-size: 10px;
+		}
 
 		input[type='file'] {
 			opacity: 0;
@@ -72,6 +107,11 @@
 	
 	p {
 		margin-top: 5px;
+	}
+	.hide_{
+		@media (max-width: 500px) { 
+			display: none;
+		}
 	}
 }
 .close{
