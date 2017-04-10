@@ -145,6 +145,11 @@ h3{
 		font-size: 18px;
 	}
 }
+h4 {
+	@media (max-width: 992px) {
+		font-size: 18px;
+	}
+}
 input, .form-control{
 	outline: none !important;
 	box-shadow: none;

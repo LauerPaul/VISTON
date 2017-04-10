@@ -6426,6 +6426,10 @@ h3 {
     h3 {
       font-size: 18px; } }
 
+@media (max-width: 992px) {
+  h4 {
+    font-size: 18px; } }
+
 input, .form-control {
   outline: none !important;
   box-shadow: none;
@@ -7443,6 +7447,58 @@ footer.white .container-fluid.contacts {
     font-size: 18px; } }
 
 /* ----------*FORM SEND END*----------- */
+/* ------------------------------------ */
+.products-page {
+  margin-top: 40px; }
+  @media (max-width: 767px) {
+    .products-page {
+      overflow: hidden; } }
+  .products-page a.product-item {
+    vertical-align: middle;
+    position: relative;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .products-page a.product-item {
+        display: -webkit-flex;
+        display: flex; } }
+    .products-page a.product-item .img-wrap img {
+      width: 100%;
+      max-width: 550px;
+      padding: 15px 5px; }
+      @media (max-width: 767px) {
+        .products-page a.product-item .img-wrap img {
+          margin: auto;
+          display: inherit; } }
+    @media (max-width: 992px) {
+      .products-page a.product-item .text-wrap {
+        max-height: 270px;
+        overflow: hidden; } }
+    @media (max-width: 767px) {
+      .products-page a.product-item .text-wrap {
+        padding: 0 20px 10px 20px; } }
+    .products-page a.product-item .text-wrap h4 {
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+      @media (max-width: 1224px) {
+        .products-page a.product-item .text-wrap h4 {
+          margin-bottom: 20px; } }
+      @media (max-width: 767px) {
+        .products-page a.product-item .text-wrap h4 {
+          text-align: center; } }
+    .products-page a.product-item .text-wrap p {
+      font-size: 18px;
+      color: #212121 !important; }
+      @media (max-width: 1224px) {
+        .products-page a.product-item .text-wrap p {
+          font-size: 16px; } }
+      @media (max-width: 992px) {
+        .products-page a.product-item .text-wrap p {
+          font-size: 14px; } }
+    .products-page a.product-item:hover p {
+      color: #212121; }
+
 /* ------------------------------------ */
 /* --------   SERVICES PAGE   --------- */
 .container-fluid.slider.title-bg {
