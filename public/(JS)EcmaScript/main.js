@@ -34,14 +34,24 @@ jQuery(document).ready(function($) {
 	//----------------------------------------------------------------------------------
 
 	$('a#search_group').click(function(){
-		$(this).parent().find('.input-group').show(180,'swing');
+		var width_ = $('.navbar-nav').width(),
+			top_ = $('.navbar-nav').height();
+
+		$(this).parent().find('.input-group').width(width_ - 40).css('top', top_/* + 90*/).addClass('border').show().animate({'opacity': 1}, 200);
 		$('input#search').focus();
 		$('.navbar-nav').addClass('search');
+
+		var	offTop = $('input#search').offset().top;	
+		// $('html, body').animate({scrollTop: offTop - 40}, 800);
 	});
 	$(document).on('click', function(e) {
 		if (!$(e.target).closest('input#search, a#search_group').length) {
-			$('a#search_group').parent().find('.input-group').hide(180,'swing');
-			$('.navbar-nav').removeClass('search');
+			var _this_ = $('a#search_group').parent().find('.input-group');
+			_this_.animate({'opacity': 0}, 200);
+			setTimeout(function(){
+				_this_.width('auto').css('top', 'auto').removeClass('border').hide();
+				$('.navbar-nav').removeClass('search');
+			},200);
 		}
 		e.stopPropagation();
 	});

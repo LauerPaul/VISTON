@@ -102,7 +102,6 @@ body.de{
 	.navbar-right{
 		padding: 35px 0;
 		margin-right: -10px;
-		position: relative;
 
 		@media (max-width: 1224px){
 			padding: 28px 0;
@@ -118,8 +117,20 @@ body.de{
 		@media (max-width: 767px){
 			padding: 15px 0;
 		}
-		.input-group{
+		.input-group.border {
+			padding: 20px;
+			background: rgba(254,254,254,0.2);
+			right: -50%;
+			left: -50%;
+		}
+
+		.input-group {
 			margin: 0 auto;
+			opacity: 0;
+			
+			input {
+				width: 100%;
+			}
 
 			@media (min-width: 768px){
 				display: none;
@@ -149,6 +160,7 @@ body.de{
 			}
 			@media (max-width: 767px){
 				display: table !important;
+				opacity: 1 !important;
 			}
 		}
 		hr{

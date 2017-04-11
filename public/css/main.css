@@ -6721,8 +6721,7 @@ body.de .navbar-default .navbar-nav > li > a {
 
 .navbar .navbar-right {
   padding: 35px 0;
-  margin-right: -10px;
-  position: relative; }
+  margin-right: -10px; }
   @media (max-width: 1224px) {
     .navbar .navbar-right {
       padding: 28px 0; } }
@@ -6736,8 +6735,16 @@ body.de .navbar-default .navbar-nav > li > a {
   @media (max-width: 767px) {
     .navbar .navbar-right {
       padding: 15px 0; } }
+  .navbar .navbar-right .input-group.border {
+    padding: 20px;
+    background: rgba(254, 254, 254, 0.2);
+    right: -50%;
+    left: -50%; }
   .navbar .navbar-right .input-group {
-    margin: 0 auto; }
+    margin: 0 auto;
+    opacity: 0; }
+    .navbar .navbar-right .input-group input {
+      width: 100%; }
     @media (min-width: 768px) {
       .navbar .navbar-right .input-group {
         display: none;
@@ -6763,7 +6770,8 @@ body.de .navbar-default .navbar-nav > li > a {
         top: 35px; } }
     @media (max-width: 767px) {
       .navbar .navbar-right .input-group {
-        display: table !important; } }
+        display: table !important;
+        opacity: 1 !important; } }
   .navbar .navbar-right hr {
     margin-top: 0px; }
     @media (min-width: 768px) {
