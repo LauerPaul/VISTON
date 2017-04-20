@@ -42,6 +42,21 @@
 		@media (max-width: 320px){
 			margin-bottom: 30px;
 		}
+		
+		.send_form {
+			.load {
+				display: none;
+			}
+		}
+
+		.send_form.load {
+			.text {
+				display: none;
+			}
+			.load {
+				display: inline;
+			}
+		}
 	}
 }
 h2{

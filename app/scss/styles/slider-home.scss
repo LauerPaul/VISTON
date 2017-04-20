@@ -124,6 +124,9 @@
 			@media (max-width: 768px){
 				font-size: 14px;
 			}
+			li:first-letter {
+			    text-transform: uppercase;
+			}
 		}
 
 		.lang-toggle{

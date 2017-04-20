@@ -6856,6 +6856,20 @@ body.de .navbar-default .navbar-nav > li > a {
 /* -----------*HEADER END*------------- */
 /* ------------------------------------ */
 /* --------------FOOTER---------------- */
+footer a#scroll_up {
+  position: fixed;
+  right: 50px;
+  bottom: 15%;
+  border: 2px solid;
+  padding: 7px 12px;
+  line-height: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.6;
+  background: white; }
+  footer a#scroll_up:hover {
+    opacity: 1; }
+
 footer .container-fluid {
   background: #212121;
   padding: 30px 10px; }
@@ -7178,6 +7192,8 @@ footer.white .container-fluid.contacts {
     @media (max-width: 768px) {
       .container-fluid.slider .wrapper-bottom-line .breadcrumbs {
         font-size: 14px; } }
+    .container-fluid.slider .wrapper-bottom-line .breadcrumbs li:first-letter {
+      text-transform: uppercase; }
     .container-fluid.slider .wrapper-bottom-line .lang-toggle {
       position: absolute;
       bottom: 0; }
@@ -7445,6 +7461,12 @@ footer.white .container-fluid.contacts {
     @media (max-width: 320px) {
       #form-send.row .last {
         margin-bottom: 30px; } }
+    #form-send.row .last .send_form .load {
+      display: none; }
+    #form-send.row .last .send_form.load .text {
+      display: none; }
+    #form-send.row .last .send_form.load .load {
+      display: inline; }
 
 @media (max-width: 471px) {
   h2 {
@@ -7506,6 +7528,12 @@ footer.white .container-fluid.contacts {
           font-size: 14px; } }
     .products-page a.product-item:hover p {
       color: #212121; }
+
+.products-page img {
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+  cursor: pointer; }
 
 /* ------------------------------------ */
 /* --------   SERVICES PAGE   --------- */

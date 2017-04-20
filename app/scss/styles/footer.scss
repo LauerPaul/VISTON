@@ -1,5 +1,21 @@
 /* --------------FOOTER---------------- */
 footer{
+	a#scroll_up {
+	    position: fixed;
+	    right: 50px;
+	    bottom: 15%;
+	    border: 2px solid;
+	    padding: 7px 12px;
+	    line-height: 0px;
+	    font-size: 18px;
+	    font-weight: bold;
+	    opacity: 0.6;
+	    background: white;
+	    
+	    &:hover {
+	    	opacity: 1;
+	    }
+	}
 	.container-fluid{
 		background: #212121;
 	    padding: 30px 10px;
